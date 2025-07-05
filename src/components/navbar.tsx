@@ -33,6 +33,11 @@ export function Navbar() {
             >About</a>
             <a
               className="transition-colors hover:text-foreground/80"
+              href="#education"
+              onClick={e => handleSmoothScroll(e, "education")}
+            >Education</a>
+            <a
+              className="transition-colors hover:text-foreground/80"
               href="#projects"
               onClick={e => handleSmoothScroll(e, "projects")}
             >Projects</a>
@@ -57,6 +62,9 @@ export function Navbar() {
           <DropdownMenuContent align="start" className="w-[200px]">
             <DropdownMenuItem>
               <a href="#about" onClick={e => handleSmoothScroll(e, "about")}>About</a>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <a href="#education" onClick={e => handleSmoothScroll(e, "education")}>Education</a>
             </DropdownMenuItem>
             <DropdownMenuItem>
               <a href="#projects" onClick={e => handleSmoothScroll(e, "projects")}>Projects</a>

@@ -64,6 +64,7 @@ export default function Home() {
 
   const [heroRef, heroVisible] = useRevealOnScroll(0)
   const [aboutRef, aboutVisible] = useRevealOnScroll(100)
+  const [educationRef, educationVisible] = useRevealOnScroll(150)
   const [projectsRef, projectsVisible] = useRevealOnScroll(200)
   const [skillsRef, skillsVisible] = useRevealOnScroll(300)
   const [certsRef, certsVisible] = useRevealOnScroll(400)
@@ -165,6 +166,68 @@ export default function Home() {
             I am a passionate developer with experience in building modern web applications.
             My expertise includes React, TypeScript, Node.js, and various modern web technologies.
           </p>
+          <Button asChild className="mt-2">
+            <a href="\CV Resume.pdf" download>
+              Download CV/RESUME
+            </a>
+          </Button>
+        </div>
+      </section>
+
+      {/* Education Section */}
+      <section
+        ref={educationRef}
+        id="education"
+        className={`py-12 md:py-24 lg:py-32 w-full px-4 md:px-8 transition-all duration-700
+          ${educationVisible ? "animate-in fade-in slide-in-from-bottom-8" : "opacity-0 translate-y-8"}
+        `}
+      >
+        <div className="w-full flex flex-col items-center gap-4 text-center">
+          <h2 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
+            Education
+          </h2>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 w-full max-w-5xl mx-auto">
+            {/* QCU */}
+            <div className="rounded-lg border bg-card p-4 flex flex-col items-center">
+              <img
+                src="\QCU.jpg"
+                alt="Quezon City University"
+                className="mb-4 w-28 h-28 object-contain rounded-full border"
+              />
+              <h3 className="font-semibold text-lg">Bachelor of Science in Information Technology</h3>
+              <p className="text-sm text-muted-foreground">Quezon City University · 2021 - 2025</p>
+            </div>
+            {/* ACCESS */}
+            <div className="rounded-lg border bg-card p-4 flex flex-col items-center">
+              <img
+                src="\Access.jpg"
+                alt="ACCESS Computer College"
+                className="mb-4 w-20 h-20 object-contain rounded-full border"
+              />
+              <h3 className="font-semibold text-lg">Senior High School</h3>
+              <p className="text-sm text-muted-foreground">ACCESS Computer College · 2018-2020</p>
+            </div>
+            {/* Maligaya High School */}
+            <div className="rounded-lg border bg-card p-4 flex flex-col items-center">
+              <img
+                src="\HighSchool.jpg"
+                alt="Maligaya High School"
+                className="mb-4 w-24 h-24 object-contain rounded-full border"
+              />
+              <h3 className="font-semibold text-lg">High School</h3>
+              <p className="text-sm text-muted-foreground">Maligaya High School · 2015 - 2018</p>
+            </div>
+            {/* Maligaya Elementary School */}
+            <div className="rounded-lg border bg-card p-4 flex flex-col items-center">
+              <img
+                src="\ELEMentary Maligaya.jpg"
+                alt="Maligaya Elementary School"
+                className="mb-4 w-20 h-20 object-contain rounded-full border"
+              />
+              <h3 className="font-semibold text-lg">Elementary School</h3>
+              <p className="text-sm text-muted-foreground">Maligaya Elementary School · 2009 - 2015</p>
+            </div>
+          </div>
         </div>
       </section>
 
