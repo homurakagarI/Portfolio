@@ -9,6 +9,15 @@ import {
 import { Menu } from "lucide-react"
 
 export function Navbar() {
+  // Smooth scroll handler
+  const handleSmoothScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, id: string) => {
+    const el = document.getElementById(id)
+    if (el) {
+      e.preventDefault()
+      el.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="flex h-20 w-full items-center px-4 md:px-8">
@@ -17,10 +26,26 @@ export function Navbar() {
             <span className="hidden font-bold text-xl md:text-2xl sm:inline-block">Portfolio</span>
           </a>
           <nav className="flex items-center space-x-6 text-lg md:text-xl font-medium">
-            <a className="transition-colors hover:text-foreground/80" href="#about">About</a>
-            <a className="transition-colors hover:text-foreground/80" href="#projects">Projects</a>
-            <a className="transition-colors hover:text-foreground/80" href="#skills">Skills</a>
-            <a className="transition-colors hover:text-foreground/80" href="#contact">Contact</a>
+            <a
+              className="transition-colors hover:text-foreground/80"
+              href="#about"
+              onClick={e => handleSmoothScroll(e, "about")}
+            >About</a>
+            <a
+              className="transition-colors hover:text-foreground/80"
+              href="#projects"
+              onClick={e => handleSmoothScroll(e, "projects")}
+            >Projects</a>
+            <a
+              className="transition-colors hover:text-foreground/80"
+              href="#skills"
+              onClick={e => handleSmoothScroll(e, "skills")}
+            >Skills</a>
+            <a
+              className="transition-colors hover:text-foreground/80"
+              href="#contact"
+              onClick={e => handleSmoothScroll(e, "contact")}
+            >Contact</a>
           </nav>
         </div>
         <DropdownMenu>
@@ -31,16 +56,16 @@ export function Navbar() {
           </DropdownMenuTrigger>
           <DropdownMenuContent align="start" className="w-[200px]">
             <DropdownMenuItem>
-              <a href="#about">About</a>
+              <a href="#about" onClick={e => handleSmoothScroll(e, "about")}>About</a>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <a href="#projects">Projects</a>
+              <a href="#projects" onClick={e => handleSmoothScroll(e, "projects")}>Projects</a>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <a href="#skills">Skills</a>
+              <a href="#skills" onClick={e => handleSmoothScroll(e, "skills")}>Skills</a>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <a href="#contact">Contact</a>
+              <a href="#contact" onClick={e => handleSmoothScroll(e, "contact")}>Contact</a>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
