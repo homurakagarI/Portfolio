@@ -55,12 +55,43 @@ export default function Home() {
   // Popup state
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
+  // Certificate modal state
+  const [selectedCert, setSelectedCert] = useState<{ src: string; alt: string } | null>(null)
+
+  // Popup animation state
+  const [showingProjectPopup, setShowingProjectPopup] = useState(false)
+  const [showingCertPopup, setShowingCertPopup] = useState(false)
+
   const [heroRef, heroVisible] = useRevealOnScroll(0)
   const [aboutRef, aboutVisible] = useRevealOnScroll(100)
   const [projectsRef, projectsVisible] = useRevealOnScroll(200)
   const [skillsRef, skillsVisible] = useRevealOnScroll(300)
   const [certsRef, certsVisible] = useRevealOnScroll(400)
   const [contactRef, contactVisible] = useRevealOnScroll(500)
+
+  // Open project popup with animation
+  function handleViewProject(project: Project) {
+    setSelectedProject(project)
+    setShowingProjectPopup(true)
+  }
+
+  // Close project popup with fade-out animation
+  function handleCloseProject() {
+    setShowingProjectPopup(false)
+    setTimeout(() => setSelectedProject(null), 200)
+  }
+
+  // Open cert popup with animation
+  function handleViewCert(cert: { src: string; alt: string }) {
+    setSelectedCert(cert)
+    setShowingCertPopup(true)
+  }
+
+  // Close cert popup with fade-out animation
+  function handleCloseCert() {
+    setShowingCertPopup(false)
+    setTimeout(() => setSelectedCert(null), 200)
+  }
 
   return (
     <div className="flex min-h-screen flex-col">
@@ -73,7 +104,7 @@ export default function Home() {
         `}
       >
         <h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-5xl lg:text-6xl lg:leading-[1.1]">
-          Full Stack Developer
+          Junior Developer
         </h1>
         <p className="max-w-[900px] text-center text-lg text-muted-foreground sm:text-xl">
           Building innovative web solutions with modern technologies.
@@ -151,22 +182,22 @@ export default function Home() {
           </h2>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
             {projects.map((project, idx) => (
-              <ProjectCard key={idx} project={project} onView={setSelectedProject} />
+              <ProjectCard key={idx} project={project} onView={handleViewProject} />
             ))}
           </div>
         </div>
       </section>
 
-      {/* Project Full Page Popup */}
+      {/* Project Full Page Popup with animation */}
       {selectedProject && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
-          <div className="relative w-full h-full flex flex-col items-center justify-center">
-            <div className="absolute top-4 left-4">
-              <Button variant="secondary" onClick={() => setSelectedProject(null)}>
+        <div className={`fixed inset-0 z-50 flex items-center justify-center bg-black/80 transition-all`}>
+          <div className="relative w-full h-full flex flex-col items-center justify-center max-h-screen">
+            <div className={`bg-background rounded-lg shadow-lg max-w-3xl w-full mx-auto p-8 flex flex-col items-center gap-6 overflow-y-auto max-h-[90vh]
+              ${showingProjectPopup ? "animate-in fade-in zoom-in-95 duration-200" : "animate-out fade-out zoom-out-95 duration-200"}
+            `}>
+              <Button variant="secondary" onClick={handleCloseProject} className="self-start mb-2">
                 Back
               </Button>
-            </div>
-            <div className="bg-background rounded-lg shadow-lg max-w-3xl w-full mx-auto p-8 flex flex-col items-center gap-6 overflow-y-auto max-h-[90vh]">
               <h2 className="text-2xl font-bold mb-2">{selectedProject.title}</h2>
               <p className="text-muted-foreground mb-4">{selectedProject.description}</p>
               <div className="flex flex-col gap-4 w-full">
@@ -238,22 +269,78 @@ export default function Home() {
             Certifications
           </h2>
           <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 w-full">
-            {/* Example certification cards */}
-            <div className="rounded-lg border bg-card p-4">
+            {/* Example certification cards with clickable thumbnails */}
+            <div className="rounded-lg border bg-card p-4 flex flex-col items-center">
+              <img
+                src="https://placehold.co/200x120?text=React+Cert"
+                alt="Certified React Developer"
+                className="mb-4 w-full h-56 object-cover rounded-md cursor-pointer"
+                onClick={() =>
+                  handleViewCert({
+                    src: "https://placehold.co/200x120?text=React+Cert",
+                    alt: "Certified React Developer",
+                  })
+                }
+              />
               <h3 className="font-semibold">Certified React Developer</h3>
               <p className="text-sm text-muted-foreground">React Institute · 2023</p>
             </div>
-            <div className="rounded-lg border bg-card p-4">
-              <h3 className="font-semibold">AWS Certified Solutions Architect</h3>
-              <p className="text-sm text-muted-foreground">Amazon Web Services · 2022</p>
+            <div className="rounded-lg border bg-card p-4 flex flex-col items-center">
+              <img
+                src="83adbc48-2f9f-41de-bac2-52eaa0b260b2.jpg"
+                alt="Best In Reaserch"
+                className="mb-4 w-full h-56 object-cover rounded-md cursor-pointer"
+                onClick={() =>
+                  handleViewCert({
+                    src: "83adbc48-2f9f-41de-bac2-52eaa0b260b2.jpg",
+                    alt: "Best In Reaserch",
+                  })
+                }
+              />
+              <h3 className="font-semibold">Best in Research Mobile Category Award</h3>
+              <p className="text-sm text-muted-foreground"> Synergy· 2025</p>
             </div>
-            <div className="rounded-lg border bg-card p-4">
+            <div className="rounded-lg border bg-card p-4 flex flex-col items-center">
+              <img
+                src="https://placehold.co/200x120?text=Full+Stack+Cert"
+                alt="Full Stack Web Development"
+                className="mb-4 w-full h-56 object-cover rounded-md cursor-pointer"
+                onClick={() =>
+                  handleViewCert({
+                    src: "https://placehold.co/200x120?text=Full+Stack+Cert",
+                    alt: "Full Stack Web Development",
+                  })
+                }
+              />
               <h3 className="font-semibold">Full Stack Web Development</h3>
               <p className="text-sm text-muted-foreground">Coursera · 2021</p>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Certificate Modal with animation */}
+      {selectedCert && (
+        <div className={`fixed inset-0 z-50 flex items-center justify-center bg-black/80 transition-all`}>
+          <div className="relative w-full h-full flex flex-col items-center justify-center">
+            <div className={`bg-background rounded-lg shadow-lg max-w-2xl w-full mx-auto p-8 flex flex-col items-center gap-6
+              ${showingCertPopup ? "animate-in fade-in zoom-in-95 duration-200" : "animate-out fade-out zoom-out-95 duration-200"}
+            `}>
+              <Button variant="secondary" onClick={handleCloseCert} className="self-start mb-2">
+                Back
+              </Button>
+              <img
+                src={selectedCert.src}
+                alt={selectedCert.alt}
+                className="max-h-[80vh] max-w-[90vw] rounded-lg border bg-background"
+              />
+              <div className="mt-4 text-lg font-semibold text-background bg-foreground/80 px-4 py-2 rounded">
+                {selectedCert.alt}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Contact Section */}
       <section
