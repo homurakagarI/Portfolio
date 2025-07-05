@@ -86,6 +86,30 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Certifications Section */}
+      <section id="certifications" className="py-12 md:py-24 lg:py-32 w-full px-4 md:px-8">
+        <div className="w-full flex flex-col items-center gap-4 text-center">
+          <h2 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
+            Certifications
+          </h2>
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 w-full">
+            {/* Example certification cards */}
+            <div className="rounded-lg border bg-card p-4">
+              <h3 className="font-semibold">Certified React Developer</h3>
+              <p className="text-sm text-muted-foreground">React Institute · 2023</p>
+            </div>
+            <div className="rounded-lg border bg-card p-4">
+              <h3 className="font-semibold">AWS Certified Solutions Architect</h3>
+              <p className="text-sm text-muted-foreground">Amazon Web Services · 2022</p>
+            </div>
+            <div className="rounded-lg border bg-card p-4">
+              <h3 className="font-semibold">Full Stack Web Development</h3>
+              <p className="text-sm text-muted-foreground">Coursera · 2021</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-12 md:py-24 lg:py-32 w-full px-4 md:px-8">
         <div className="w-full flex flex-col items-center gap-4 text-center">
