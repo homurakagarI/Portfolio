@@ -178,15 +178,15 @@ export default function Home() {
       <section
         ref={educationRef}
         id="education"
-        className={`py-12 md:py-24 lg:py-32 w-full px-4 md:px-8 transition-all duration-700
+        className={`py-8 md:py-16 lg:py-24 w-full px-2 sm:px-4 md:px-8 transition-all duration-700
           ${educationVisible ? "animate-in fade-in slide-in-from-bottom-8" : "opacity-0 translate-y-8"}
         `}
       >
         <div className="w-full flex flex-col items-center gap-4 text-center">
-          <h2 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
+          <h2 className="text-2xl sm:text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
             Education
           </h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 w-full max-w-5xl mx-auto">
+          <div className="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full max-w-5xl mx-auto">
             {/* QCU */}
             <div className="rounded-lg border bg-card p-4 flex flex-col items-center">
               <img
@@ -235,15 +235,15 @@ export default function Home() {
       <section
         ref={projectsRef}
         id="projects"
-        className={`py-12 md:py-24 lg:py-32 w-full px-4 md:px-8 transition-all duration-700
+        className={`py-8 md:py-16 lg:py-24 w-full px-2 sm:px-4 md:px-8 transition-all duration-700
           ${projectsVisible ? "animate-in fade-in slide-in-from-bottom-8" : "opacity-0 translate-y-8"}
         `}
       >
         <div className="w-full flex flex-col items-center gap-4 text-center">
-          <h2 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
+          <h2 className="text-2xl sm:text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
             Featured Projects
           </h2>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 w-full">
+          <div className="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
             {projects.map((project, idx) => (
               <ProjectCard key={idx} project={project} onView={handleViewProject} />
             ))}
@@ -255,21 +255,21 @@ export default function Home() {
       {selectedProject && (
         <div className={`fixed inset-0 z-50 flex items-center justify-center bg-black/80 transition-all`}>
           <div className="relative w-full h-full flex flex-col items-center justify-center max-h-screen">
-            <div className={`bg-background rounded-lg shadow-lg max-w-3xl w-full mx-auto p-8 flex flex-col items-center gap-6 overflow-y-auto max-h-[90vh]
+            <div className={`bg-background rounded-lg shadow-lg w-full max-w-3xl mx-auto p-2 sm:p-8 flex flex-col items-center gap-4 sm:gap-6 overflow-y-auto max-h-[90vh]
               ${showingProjectPopup ? "animate-in fade-in zoom-in-95 duration-200" : "animate-out fade-out zoom-out-95 duration-200"}
             `}>
               <Button variant="secondary" onClick={handleCloseProject} className="self-start mb-2">
                 Back
               </Button>
-              <h2 className="text-2xl font-bold mb-2">{selectedProject.title}</h2>
-              <p className="text-muted-foreground mb-4">{selectedProject.description}</p>
-              <div className="flex flex-col gap-4 w-full">
+              <h2 className="text-xl sm:text-2xl font-bold mb-2">{selectedProject.title}</h2>
+              <p className="text-muted-foreground mb-4 text-sm sm:text-base">{selectedProject.description}</p>
+              <div className="flex flex-col gap-2 sm:gap-4 w-full">
                 {selectedProject.screenshots?.map((src, i) => (
                   <img
                     key={i}
                     src={src}
                     alt={`${selectedProject.title} screenshot ${i + 1}`}
-                    className="w-full rounded-md border"
+                    className="w-full rounded-md border max-h-[40vh] object-contain"
                   />
                 ))}
               </div>
@@ -290,26 +290,30 @@ export default function Home() {
       <section
         ref={skillsRef}
         id="skills"
-        className={`py-12 md:py-24 lg:py-32 bg-muted/50 w-full px-4 md:px-8 transition-all duration-700
+        className={`py-8 md:py-16 lg:py-24 bg-muted/50 w-full px-2 sm:px-4 md:px-8 transition-all duration-700
           ${skillsVisible ? "animate-in fade-in slide-in-from-bottom-8" : "opacity-0 translate-y-8"}
         `}
       >
         <div className="w-full flex flex-col items-center gap-4 text-center">
-          <h2 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
+          <h2 className="text-2xl sm:text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
             Skills & Technologies
           </h2>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 w-full">
+          <div className="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-full">
             <div className="rounded-lg border bg-card p-4">
               <h3 className="font-semibold">Frontend</h3>
               <p className="text-sm text-muted-foreground">React, TypeScript, TailwindCSS</p>
             </div>
-            <div className="rounded-lg border bg-card p-4">
+            <div className="rounded-lg border bg-[#777bb4] text-white p-4">
               <h3 className="font-semibold">Backend</h3>
-              <p className="text-sm text-muted-foreground">Node.js, Express, REST APIs</p>
+              <p className="text-sm">
+                Node.js, Express, REST APIs, <span className="font-bold">PHP</span>, <span className="font-bold text-yellow-300">Java</span>
+              </p>
             </div>
             <div className="rounded-lg border bg-card p-4">
               <h3 className="font-semibold">Database</h3>
-              <p className="text-sm text-muted-foreground">PostgreSQL, MongoDB, Redis</p>
+              <p className="text-sm text-muted-foreground">
+                PostgreSQL, MongoDB, Redis, <span className="font-bold text-blue-600">MySQL</span>, <span className="font-bold text-orange-600">Oracle</span>
+              </p>
             </div>
             <div className="rounded-lg border bg-card p-4">
               <h3 className="font-semibold">Tools</h3>
@@ -323,15 +327,15 @@ export default function Home() {
       <section
         ref={certsRef}
         id="certifications"
-        className={`py-12 md:py-24 lg:py-32 w-full px-4 md:px-8 transition-all duration-700
+        className={`py-8 md:py-16 lg:py-24 w-full px-2 sm:px-4 md:px-8 transition-all duration-700
           ${certsVisible ? "animate-in fade-in slide-in-from-bottom-8" : "opacity-0 translate-y-8"}
         `}
       >
         <div className="w-full flex flex-col items-center gap-4 text-center">
-          <h2 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
+          <h2 className="text-2xl sm:text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
             Certifications
           </h2>
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3 w-full">
+          <div className="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
             {/* Example certification cards with clickable thumbnails */}
             <div className="rounded-lg border bg-card p-4 flex flex-col items-center">
               <img
@@ -386,7 +390,7 @@ export default function Home() {
       {selectedCert && (
         <div className={`fixed inset-0 z-50 flex items-center justify-center bg-black/80 transition-all`}>
           <div className="relative w-full h-full flex flex-col items-center justify-center">
-            <div className={`bg-background rounded-lg shadow-lg max-w-2xl w-full mx-auto p-8 flex flex-col items-center gap-6
+            <div className={`bg-background rounded-lg shadow-lg w-full max-w-2xl mx-auto p-2 sm:p-8 flex flex-col items-center gap-4 sm:gap-6
               ${showingCertPopup ? "animate-in fade-in zoom-in-95 duration-200" : "animate-out fade-out zoom-out-95 duration-200"}
             `}>
               <Button variant="secondary" onClick={handleCloseCert} className="self-start mb-2">
@@ -395,9 +399,9 @@ export default function Home() {
               <img
                 src={selectedCert.src}
                 alt={selectedCert.alt}
-                className="max-h-[80vh] max-w-[90vw] rounded-lg border bg-background"
+                className="max-h-[60vh] sm:max-h-[80vh] max-w-[90vw] rounded-lg border bg-background object-contain"
               />
-              <div className="mt-4 text-lg font-semibold text-background bg-foreground/80 px-4 py-2 rounded">
+              <div className="mt-4 text-base sm:text-lg font-semibold text-background bg-foreground/80 px-4 py-2 rounded">
                 {selectedCert.alt}
               </div>
             </div>
@@ -409,15 +413,15 @@ export default function Home() {
       <section
         ref={contactRef}
         id="contact"
-        className={`py-12 md:py-24 lg:py-32 w-full px-4 md:px-8 transition-all duration-700
+        className={`py-8 md:py-16 lg:py-24 w-full px-2 sm:px-4 md:px-8 transition-all duration-700
           ${contactVisible ? "animate-in fade-in slide-in-from-bottom-8" : "opacity-0 translate-y-8"}
         `}
       >
         <div className="w-full flex flex-col items-center gap-4 text-center">
-          <h2 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
+          <h2 className="text-2xl sm:text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
             Get in Touch
           </h2>
-          <p className="text-muted-foreground">
+          <p className="text-muted-foreground text-sm sm:text-base">
             I'm always open to new opportunities and collaborations.
           </p>
           <Button size="lg" asChild>

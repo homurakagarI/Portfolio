@@ -7,6 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu"
 import { Menu } from "lucide-react"
+import { Link } from "react-router-dom"
 
 export function Navbar() {
   // Smooth scroll handler
@@ -22,35 +23,16 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="flex h-20 w-full items-center px-4 md:px-8">
         <div className="mr-4 hidden md:flex">
-          <a className="mr-6 flex items-center space-x-2" href="/">
-            <span className="hidden font-bold text-xl md:text-2xl sm:inline-block">Portfolio</span>
-          </a>
+          <Link className="mr-6 flex items-center space-x-2 group" to="/portfolio">
+            <span className="hidden font-bold text-xl md:text-2xl sm:inline-block bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600 transition-all duration-300 group-hover:scale-105">JC Genavia</span>
+          </Link>
           <nav className="flex items-center space-x-6 text-lg md:text-xl font-medium">
-            <a
-              className="transition-colors hover:text-foreground/80"
-              href="#about"
-              onClick={e => handleSmoothScroll(e, "about")}
-            >About</a>
-            <a
-              className="transition-colors hover:text-foreground/80"
-              href="#education"
-              onClick={e => handleSmoothScroll(e, "education")}
-            >Education</a>
-            <a
-              className="transition-colors hover:text-foreground/80"
-              href="#projects"
-              onClick={e => handleSmoothScroll(e, "projects")}
-            >Projects</a>
-            <a
-              className="transition-colors hover:text-foreground/80"
-              href="#skills"
-              onClick={e => handleSmoothScroll(e, "skills")}
-            >Skills</a>
-            <a
-              className="transition-colors hover:text-foreground/80"
-              href="#contact"
-              onClick={e => handleSmoothScroll(e, "contact")}
-            >Contact</a>
+            <Link className="transition-colors hover:text-foreground/80" to="/about">About</Link>
+            <Link className="transition-colors hover:text-foreground/80" to="/education">Education</Link>
+            <Link className="transition-colors hover:text-foreground/80" to="/projects">Projects</Link>
+            <Link className="transition-colors hover:text-foreground/80" to="/skills">Skills</Link>
+            <Link className="transition-colors hover:text-foreground/80" to="/certifications">Certifications</Link>
+            <Link className="transition-colors hover:text-foreground/80" to="/contact">Contact</Link>
           </nav>
         </div>
         <DropdownMenu>
@@ -61,19 +43,22 @@ export function Navbar() {
           </DropdownMenuTrigger>
           <DropdownMenuContent align="start" className="w-[200px]">
             <DropdownMenuItem>
-              <a href="#about" onClick={e => handleSmoothScroll(e, "about")}>About</a>
+              <Link to="/about">About</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <a href="#education" onClick={e => handleSmoothScroll(e, "education")}>Education</a>
+              <Link to="/education">Education</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <a href="#projects" onClick={e => handleSmoothScroll(e, "projects")}>Projects</a>
+              <Link to="/projects">Projects</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <a href="#skills" onClick={e => handleSmoothScroll(e, "skills")}>Skills</a>
+              <Link to="/skills">Skills</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              <a href="#contact" onClick={e => handleSmoothScroll(e, "contact")}>Contact</a>
+              <Link to="/certifications">Certifications</Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Link to="/contact">Contact</Link>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
