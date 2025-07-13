@@ -274,7 +274,7 @@ export default function ContactPage() {
                 <h2 className="text-2xl font-bold mb-6">Contact Info</h2>
                 
                 <div className="space-y-4">
-                  {contactMethods.map((method, index) => (
+                  {contactMethods.map((method) => (
                     <a 
                       key={method.title}
                       href={method.link}
