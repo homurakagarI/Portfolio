@@ -41,7 +41,16 @@ export default function ProjectsPage() {
       description: "This capstone project introduces an innovative Data-Driven Management System designed specifically for KM Foundation. The system integrates geo-tagging capabilities with cloud-based analytics to streamline operations and improve decision-making processes.",
       link: "https://github.com/axiomproject/kkmk",
       thumbnail: "\KMFI image.jpg",
-      screenshots: ["\KMFI image.jpg"],
+      screenshots: [
+       "\KMFI image.jpg",
+       "\kmfi 1.jpg",
+       "\KMFI 2.jpg",
+       "\KMFI 3.jpg",
+       "\KMFI 4.jpg",
+       "\kmfi 5.jpg",
+       "\KMFI 6.jpg",
+       "\KMFI 7.jpg",
+      ],
       technologies: ["React", "Node.js", "MongoDB", "Google Maps API", "AWS"],
       features: [
         "Real-time geo-tagging of resources and activities",
@@ -86,6 +95,54 @@ export default function ProjectsPage() {
       ],
       challenges: "Creating smooth animations and ensuring consistent performance across different browsers were the main challenges. Implementing a responsive design that works well on all devices also required careful planning.",
       outcome: "The portfolio has received positive feedback from recruiters and potential clients, with an average time on site of 3.5 minutes."
+    },
+    {
+      title: "Raffle Mini-Games System",
+      description: "An interactive raffle and mini-games platform featuring multiple game types including spinning wheels, slot machines, lottery draws, and card games. The system provides a comprehensive gaming experience with customizable game modes and participant management.",
+      link: "https://github.com/homurakagarI/Raffle-System",
+      thumbnail: "\wow.jpg",
+      screenshots: [
+        "\lottery.jpg", 
+        "\wheel.jpg", 
+        "\Slots.jpg", 
+        "\Cards.jpg"
+      ],
+      technologies: ["React", "TypeScript", "CSS3", "HTML5", "Web Audio API"],
+      features: [
+        "Multiple game types: Wheel, Slots, Lottery, and Cards",
+        "Single Winner and Elimination game modes",
+        "Real-time participant management",
+        "Sound effects and animations",
+        "Responsive design for all devices",
+        "Quick guide for easy setup",
+        "Customizable game settings"
+      ],
+      challenges: "The main challenges included implementing smooth animations for different game mechanics, ensuring fair randomization algorithms, and creating an intuitive user interface that works across various game types while maintaining consistent user experience.",
+      outcome: "The platform has been successfully deployed and used for multiple events, providing an engaging and fair way to conduct raffles and mini-games with positive user feedback on the interactive experience."
+    },
+    {
+      title: "School Learning Management System (LMS)",
+      description: "A comprehensive learning management system designed for educational institutions. This platform facilitates online learning through course management, student tracking, assignment submission, and interactive learning materials.",
+      link: "https://github.com/homurakagarI/school-lms",
+      thumbnail: "\school-lms.jpg",
+      screenshots: [
+        "\lms-dashboard.jpg",
+        "\lms-courses.jpg",
+        "\lms-assignments.jpg",
+        "\lms-grades.jpg"
+      ],
+      technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.IO", "AWS S3"],
+      features: [
+        "Course creation and management",
+        "Assignment submission and grading",
+        "Student progress tracking",
+        "Real-time notifications",
+        "Discussion forums for each course",
+        "File sharing and resource management",
+        "Automated attendance tracking"
+      ],
+      challenges: "The main challenge was creating a system that could handle multiple concurrent users while maintaining data integrity. We also needed to implement a robust permissions system to manage different access levels for administrators, teachers, and students.",
+      outcome: "The LMS has been adopted by several educational institutions, serving over 2,000 students and 150 teachers. It has reduced administrative workload by 40% and improved student engagement metrics by 25%."
     },
     // Add more projects as needed
   ]
