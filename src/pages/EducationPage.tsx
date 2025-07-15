@@ -40,7 +40,6 @@ const educationData = [
     logo: "/QCU.jpg", 
     background: "/QCU_thumbnail.jpg",
     achievements: [
-      "Dean's Lister for multiple semesters",
       "Participated in Inter-University Programming Competition",
       "Awarded Best Capstone Project for KM Foundation Management System",
       "Active member of Computer Science Society"
@@ -54,10 +53,10 @@ const educationData = [
     logo: "/Access.jpg",
     background: "/Access Computer.jpg",
     achievements: [
-      "Graduated with High Honors",
-      "Winner of Web Design competition",
-      "School representative for regional coding contest",
-      "Served as Class Vice President"
+      "Graduated with Honors",
+      "2nd Runner up on Web Design competition",
+      
+      
     ],
     description: "ACCESS Computer College provided me with my first serious exposure to programming and web development, sparking my passion for technology. The specialized curriculum prepared me well for my IT degree."
   },
@@ -68,10 +67,9 @@ const educationData = [
     logo: "/HighSchool.jpg",
     background: "/Maligaya High.jpg",
     achievements: [
-      "Consistent Honor Student",
-      "President of Computer Club",
-      "Best in Mathematics award",
-      "Participated in Division-level Science Quiz Bee"
+      "Honor Student",
+      
+      
     ],
     description: "During my time at Maligaya High School, I discovered my aptitude for technical subjects and analytical thinking. The foundational knowledge I gained here set me on my path toward a career in technology."
   },
@@ -82,10 +80,7 @@ const educationData = [
     logo: "/ELEMentary Maligaya.jpg",
     background: "/ElemMaligaya.jpg",
     achievements: [
-      "Graduated with Honors",
-      "Winner of School Math Challenge",
-      "Active participant in Science Club activities",
-      "Awarded Most Diligent Student"
+      
     ],
     description: "My academic journey began at Maligaya Elementary School, where I developed a strong work ethic and curiosity for learning. The supportive teachers encouraged my interest in STEM subjects from an early age."
   }
