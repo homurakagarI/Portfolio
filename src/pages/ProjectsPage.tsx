@@ -296,7 +296,7 @@ export default function ProjectsPage() {
                     </div>
                     
                     <div>
-                      <h3 className="text-lg font-semibold mb-2">Technologies Used</h3>
+                      <h3 className="text-lg font-semibold mb-2">Technologies USED</h3>
                       <div className="flex flex-wrap gap-2">
                         {selectedProject.technologies?.map((tech, i) => (
                           <span key={i} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-medium">
