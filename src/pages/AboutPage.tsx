@@ -84,15 +84,10 @@ export default function AboutPage() {
             className={`relative overflow-hidden rounded-lg border-4 border-primary transform transition-all duration-1000 order-1 md:order-2
               ${imageSection2.isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-24"}`}
           >
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30 z-10"></div>
-            <img 
-   
-              alt="June Carl Genavia in Graduation" 
-              className="w-full object-cover aspect-square hover:scale-105 transition-transform duration-700"
-            />
+          
           </div>
         </div>
-        
+      
         <div
           ref={textSection3.ref} 
           className={`max-w-3xl mx-auto mt-8 transition-all duration-1000 delay-300
