@@ -50,11 +50,7 @@ export default function AboutPage() {
               ${imageSection1.isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-24"}`}
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30 z-10"></div>
-            <img 
-        
-              alt="June Carl Genavia in Formal Attire" 
-              className="w-full object-cover aspect-square hover:scale-105 transition-transform duration-700"
-            />
+    
           </div>
           
           <div
