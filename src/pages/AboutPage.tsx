@@ -51,7 +51,7 @@ export default function AboutPage() {
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30 z-10"></div>
             <img 
-              src="/514186001_1403657190685469_8561697555227332789_n.jpg" 
+        
               alt="June Carl Genavia in Formal Attire" 
               className="w-full object-cover aspect-square hover:scale-105 transition-transform duration-700"
             />
@@ -63,7 +63,7 @@ export default function AboutPage() {
               ${textSection1.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
           >
             <p className="text-lg leading-relaxed text-foreground/90">
-              I am a passionate and dedicated developer with a strong focus on building modern, high-quality web applications that are both functional and user-friendly. With solid experience working across the full stack, I specialize in using technologies like React, TypeScript, and Node.js to bring interactive and responsive web solutions to life.
+              I am a passionate and dedicated developer with a strong focus on building modern, high-quality web applications that are both functional and user-friendly.I specialize in using technologies like React, TypeScript, and Node.js to bring interactive and responsive web solutions to life.
             </p>
           </div>
         </div>
@@ -86,7 +86,7 @@ export default function AboutPage() {
           >
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30 z-10"></div>
             <img 
-              src="/512175140_613948378393477_7361957937429761267_n (1).jpg" 
+   
               alt="June Carl Genavia in Graduation" 
               className="w-full object-cover aspect-square hover:scale-105 transition-transform duration-700"
             />
