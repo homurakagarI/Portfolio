@@ -120,6 +120,19 @@ function AnimatedRoutes() {
             </motion.div>
           }
         />
+        <Route
+          path="*"
+          element={
+            <motion.div
+              initial={{ opacity: 0, y: 32 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -32 }}
+              transition={{ duration: 0.3 }}
+            >
+              <PortfolioPage />
+            </motion.div>
+          }
+        />
       </Routes>
     </AnimatePresence>
   )

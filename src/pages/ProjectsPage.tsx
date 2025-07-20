@@ -63,38 +63,57 @@ export default function ProjectsPage() {
       outcome: "The system has significantly improved operational efficiency, reducing administrative overhead by 35% and increasing field worker productivity by 28%."
     },
     {
-      title: "E-commerce Platform",
-      description: "A modern e-commerce web application built using Next.js and Stripe for payment processing. This platform provides a seamless shopping experience with robust admin features for inventory and order management.",
-      link: "https://github.com/homurakagarI/ecommerce",
-      thumbnail: "https://placehold.co/400x200?text=E-commerce",
-      screenshots: ["https://placehold.co/800x400?text=E-commerce+Screenshot+1"],
-      technologies: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS", "Prisma"],
-      features: [
-        "User authentication and profile management",
-        "Product catalog with advanced filtering",
-        "Secure payment processing with Stripe",
-        "Order tracking and history",
-        "Admin dashboard for inventory management"
+      title: "CL Genavia Air Conditioning & Refrigeration Services Website",
+      description: "A modern, responsive website for CL Genavia Air Conditioning & Refrigeration Services. Features include a prominent company logo, animated brand showcase, detailed service listings, gallery, and contact information. The design emphasizes clarity, professionalism, and ease of navigation for both desktop and mobile users.",
+      link: "https://github.com/homurakagarI/clgenaviaAirconandRefrigiration",
+      thumbnail: "\\CL1.jpg",
+      screenshots: [
+        "\\CL1.jpg",
+        "\\CL2.jpg",
+        "\\CL3.jpg",
+        "\\CL4.jpg"
       ],
-      challenges: "Implementing real-time inventory updates and ensuring a smooth checkout process were the main challenges. We also had to optimize the application for performance across different devices.",
-      outcome: "The platform has a 98% user satisfaction rate and has processed over 5,000 orders with an average conversion rate of 4.2%."
+      technologies: ["JavaScript (React)", "JSX", "CSS", "HTML", "Vite"],
+      features: [
+        "Animated brand showcase and logo",
+        "Detailed, visually organized service listings",
+        "Responsive gallery of work and services",
+        "Contact form and business information",
+        "Professional, clean, and mobile-friendly design"
+      ],
+      challenges: "Ensuring seamless responsiveness across devices, integrating animated and interactive UI elements, and maintaining clarity and professionalism throughout the design.",
+      outcome: "The website provides a clear, professional, and user-friendly experience, helping CL Genavia reach more customers and streamline service inquiries."
     },
     {
-      title: "Portfolio Website",
-      description: "A personal portfolio website built with React, Vite, and Tailwind CSS. This project showcases my skills, projects, and professional background in an interactive and engaging manner.",
-      link: "https://github.com/homurakagarI/portfolio",
-      thumbnail: "https://placehold.co/400x200?text=Portfolio",
-      screenshots: ["https://placehold.co/800x400?text=Portfolio+Screenshot+1"],
-      technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "Framer Motion"],
-      features: [
-        "Responsive design for all device sizes",
-        "Animated page transitions and interactions",
-        "Light and dark mode support",
-        "Interactive project showcase",
-        "Contact form with validation"
+      title: "JCG Corporation Employee Management System",
+      description: "A modern web-based platform built with PHP, MySQL, HTML5, CSS3, JavaScript, Bootstrap, and jQuery, designed to streamline HR operations by automating employee data management, attendance tracking, leave requests, scheduling, and approvals through a secure, role-based interface.",
+      link: "https://github.com/homurakagarI/Employee-Management-Portal",
+      thumbnail: "\\JCG1.jpg",
+      screenshots: [
+        "\\JCG1.jpg",
+        "\\JCG2.jpg",
+        "\\JCG3.jpg",
+        "\\JCG4.jpg",
+        "\\JCG5.jpg",
+        "\\JCG6.jpg",
+        "\\JCG7.jpg",
+        "\\JCG8.jpg",
+        "\\Staff1.jpg",
+        "\\Staff2.jpg",
+        "\\Staff3.jpg",
+        "\\Staff4.jpg"
       ],
-      challenges: "Creating smooth animations and ensuring consistent performance across different browsers were the main challenges. Implementing a responsive design that works well on all devices also required careful planning.",
-      outcome: "The portfolio has received positive feedback from recruiters and potential clients, with an average time on site of 3.5 minutes."
+      technologies: ["PHP", "MySQL", "HTML5", "CSS3", "JavaScript", "Bootstrap", "jQuery"],
+      features: [
+        "Automated employee data management",
+        "Attendance tracking and reporting",
+        "Leave request and approval workflows",
+        "Employee scheduling",
+        "Role-based access control",
+        "Responsive and user-friendly interface"
+      ],
+      challenges: "Ensuring secure authentication and authorization for different user roles, integrating real-time attendance tracking, and providing a seamless user experience across devices.",
+      outcome: "The platform has streamlined HR operations, reduced manual paperwork, and improved data accuracy and accessibility for JCG Corporation."
     },
     {
       title: "Raffle Mini-Games System",
@@ -119,31 +138,7 @@ export default function ProjectsPage() {
       ],
       challenges: "The main challenges included implementing smooth animations for different game mechanics, ensuring fair randomization algorithms, and creating an intuitive user interface that works across various game types while maintaining consistent user experience.",
       outcome: "The platform has been successfully deployed and used for multiple events, providing an engaging and fair way to conduct raffles and mini-games with positive user feedback on the interactive experience."
-    },
-    {
-      title: "School Learning Management System (LMS)",
-      description: "A comprehensive learning management system designed for educational institutions. This platform facilitates online learning through course management, student tracking, assignment submission, and interactive learning materials.",
-      link: "https://github.com/homurakagarI/school-lms",
-      thumbnail: "\school-lms.jpg",
-      screenshots: [
-        "\lms-dashboard.jpg",
-        "\lms-courses.jpg",
-        "\lms-assignments.jpg",
-        "\lms-grades.jpg"
-      ],
-      technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.IO", "AWS S3"],
-      features: [
-        "Course creation and management",
-        "Assignment submission and grading",
-        "Student progress tracking",
-        "Real-time notifications",
-        "Discussion forums for each course",
-        "File sharing and resource management",
-        "Automated attendance tracking"
-      ],
-      challenges: "The main challenge was creating a system that could handle multiple concurrent users while maintaining data integrity. We also needed to implement a robust permissions system to manage different access levels for administrators, teachers, and students.",
-      outcome: "The LMS has been adopted by several educational institutions, serving over 2,000 students and 150 teachers. It has reduced administrative workload by 40% and improved student engagement metrics by 25%."
-    },
+    }
     // Add more projects as needed
   ]
 

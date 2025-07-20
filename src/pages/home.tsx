@@ -39,16 +39,7 @@ export default function Home() {
       screenshots: [
         "\KMFI image.jpg",
       ]
-    },
-    {
-      title: "E-commerce Platform",
-      description: "A modern e-commerce web app using Next.js and Stripe.",
-      link: "https://github.com/homurakagarI/ecommerce",
-      thumbnail: "https://placehold.co/400x200?text=E-commerce",
-      screenshots: [
-        "https://placehold.co/800x400?text=E-commerce+Screenshot+1"
-      ]
-    },
+    }
     // Add more projects as needed
   ]
 
@@ -335,52 +326,35 @@ export default function Home() {
           <h2 className="text-2xl sm:text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
             Certifications
           </h2>
-          <div className="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
-            {/* Example certification cards with clickable thumbnails */}
-            <div className="rounded-lg border bg-card p-4 flex flex-col items-center">
-              <img
-                src="https://placehold.co/200x120?text=React+Cert"
-                alt="Certified React Developer"
-                className="mb-4 w-full h-56 object-cover rounded-md cursor-pointer"
-                onClick={() =>
-                  handleViewCert({
-                    src: "https://placehold.co/200x120?text=React+Cert",
-                    alt: "Certified React Developer",
-                  })
-                }
-              />
-              <h3 className="font-semibold">Certified React Developer</h3>
-              <p className="text-sm text-muted-foreground">React Institute · 2023</p>
-            </div>
-            <div className="rounded-lg border bg-card p-4 flex flex-col items-center">
-              <img
-                src="83adbc48-2f9f-41de-bac2-52eaa0b260b2.jpg"
-                alt="Best In Reaserch"
-                className="mb-4 w-full h-56 object-cover rounded-md cursor-pointer"
-                onClick={() =>
-                  handleViewCert({
+          <div className="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-3 w-full max-w-5xl mx-auto">
+            <div className="group rounded-xl border-2 border-primary/20 hover:border-primary/40 bg-card shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col overflow-hidden">
+              {/* Image container with overlay */}
+              <div className="relative overflow-hidden h-48">
+                <img
+                  src="83adbc48-2f9f-41de-bac2-52eaa0b260b2.jpg"
+                  alt="Best In Reaserch"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                </div>
+              </div>
+              
+              {/* Content */}
+              <div className="p-5 flex flex-col flex-grow">
+                <h3 className="font-bold text-lg mb-2">Best in Research Mobile Category Award</h3>
+                <p className="text-sm text-muted-foreground mb-4 flex-grow">Synergy · 2025</p>
+                
+                <Button 
+                  onClick={() => handleViewCert({
                     src: "83adbc48-2f9f-41de-bac2-52eaa0b260b2.jpg",
-                    alt: "Best In Reaserch",
-                  })
-                }
-              />
-              <h3 className="font-semibold">Best in Research Mobile Category Award</h3>
-              <p className="text-sm text-muted-foreground"> Synergy· 2025</p>
-            </div>
-            <div className="rounded-lg border bg-card p-4 flex flex-col items-center">
-              <img
-                src="https://placehold.co/200x120?text=Full+Stack+Cert"
-                alt="Full Stack Web Development"
-                className="mb-4 w-full h-56 object-cover rounded-md cursor-pointer"
-                onClick={() =>
-                  handleViewCert({
-                    src: "https://placehold.co/200x120?text=Full+Stack+Cert",
-                    alt: "Full Stack Web Development",
-                  })
-                }
-              />
-              <h3 className="font-semibold">Full Stack Web Development</h3>
-              <p className="text-sm text-muted-foreground">Coursera · 2021</p>
+                    alt: "Best In Research Mobile Category Award"
+                  })}
+                  className="mt-auto w-full transition-all duration-300 relative overflow-hidden group/btn"
+                >
+                  <span className="relative z-10">View Certificate</span>
+                  <span className="absolute inset-0 bg-gradient-to-r from-primary/80 to-purple-600/80 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
+                </Button>
+              </div>
             </div>
           </div>
         </div>

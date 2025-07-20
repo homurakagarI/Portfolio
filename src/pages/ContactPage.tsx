@@ -42,7 +42,7 @@ const contactMethods = [
       </svg>
     ),
     title: "Email",
-    value: "your.email@example.com",
+    value: "Junecarlgenavia@gmail.com",
     link: "mailto:your.email@example.com",
   },
   {
@@ -52,8 +52,8 @@ const contactMethods = [
       </svg>
     ),
     title: "Blog",
-    value: "jcgenavia.dev/blog",
-    link: "https://jcgenavia.dev/blog",
+    value: "junecarlgenavia.dev/blog",
+    link: "https://junecarlgenavia.dev/blog",
   },
   {
     icon: (
@@ -64,8 +64,8 @@ const contactMethods = [
       </svg>
     ),
     title: "LinkedIn",
-    value: "linkedin.com/in/jcgenavia",
-    link: "https://linkedin.com/in/jcgenavia",
+    value: "linkedin.com/in/junecarlgenavia",
+    link: "https://linkedin.com/in/junecarlgenavia",
   },
   {
     icon: (
@@ -75,8 +75,8 @@ const contactMethods = [
       </svg>
     ),
     title: "GitHub",
-    value: "github.com/jcgenavia",
-    link: "https://github.com/jcgenavia",
+    value: "https://github.com/homurakagarI",
+    link: "https://github.com/homurakagarI",
   },
 ]
 
@@ -175,13 +175,13 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={handleChange}
                       className="w-full px-4 py-2 rounded-md border border-input bg-background/50 focus:outline-none focus:ring-2 focus:ring-primary"
-                      placeholder="John Doe"
+                      placeholder=""
                       required
                     />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium">
-                      Your Email
+                      your Email
                     </label>
                     <input
                       type="email"
@@ -295,30 +295,6 @@ export default function ContactPage() {
               </div>
               
               <div className="p-6 md:p-8 rounded-xl border-2 border-primary/30 bg-card/50 backdrop-blur-sm flex-grow">
-                <h2 className="text-2xl font-bold mb-4">My Office Hours</h2>
-                
-                <div className="space-y-2">
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Monday - Friday:</span>
-                    <span className="font-medium">9:00 AM - 6:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Saturday:</span>
-                    <span className="font-medium">10:00 AM - 4:00 PM</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Sunday:</span>
-                    <span className="font-medium">Closed</span>
-                  </div>
-                </div>
-                
-                <div className="mt-8">
-                  <h3 className="font-medium mb-2">Response Time</h3>
-                  <p className="text-sm text-muted-foreground">
-                    I typically respond to inquiries within 24-48 hours during business days.
-                  </p>
-                </div>
-                
                 <div className="mt-8 pt-8 border-t">
                   <blockquote className="italic text-muted-foreground">
                     "Let's create something amazing together!"
