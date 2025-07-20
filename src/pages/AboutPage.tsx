@@ -101,7 +101,7 @@ export default function AboutPage() {
         >
           <Button asChild className="mt-2 px-8 py-6 text-lg animate-pulse">
             <a href="\Genavia-CV.pdf" download>
-              Download CV/RESUME
+              Download CV-RESUME
             </a>
           </Button>
         </div>
