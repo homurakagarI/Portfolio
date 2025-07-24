@@ -100,7 +100,7 @@ export default function AboutPage() {
             ${btnSection.isVisible ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}
         >
           <Button asChild className="mt-2 px-8 py-6 text-lg animate-pulse">
-            <a href="\Genavia-CV.pdf" download>
+            <a href="\Genavia-CVResume.pdf" download>
               Download CV-RESUME
             </a>
           </Button>

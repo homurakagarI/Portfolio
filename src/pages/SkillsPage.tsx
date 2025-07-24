@@ -22,16 +22,13 @@ const skills = [
 		items: [
 			{ name: "PostgreSQL", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", hoverColor: "hover:bg-blue-700" },
 			{ name: "MongoDB", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", hoverColor: "hover:bg-green-700" },
-			{ name: "Redis", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg", hoverColor: "hover:bg-red-700" },
 			{ name: "MySQL", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", hoverColor: "hover:bg-blue-600" },
-			{ name: "Oracle", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg", hoverColor: "hover:bg-orange-600" },
 		],
 	},
 	{
 		category: "Tools",
 		items: [
 			{ name: "Git", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", hoverColor: "hover:bg-orange-700" },
-			{ name: "Docker", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", hoverColor: "hover:bg-blue-800" },
 			{ name: "AWS", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg", hoverColor: "hover:bg-yellow-600" },
 		],
 	},
