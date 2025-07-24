@@ -11,8 +11,6 @@ const skills = [
 		category: "Backend",
 		items: [
 			{ name: "Node.js", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", hoverColor: "hover:bg-green-600" },
-			{ name: "Express", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", hoverColor: "hover:bg-gray-600" },
-			{ name: "REST APIs", img: "https://cdn.worldvectorlogo.com/logos/rest-api.svg", hoverColor: "hover:bg-purple-600" },
 			{ name: "PHP", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg", hoverColor: "hover:bg-indigo-600" },
 			{ name: "Java", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", hoverColor: "hover:bg-red-600" },
 		],
@@ -69,5 +67,5 @@ export default function SkillsPage() {
 				</div>
 			</div>
 		</section>
-	)
-}
+		)
+	}
