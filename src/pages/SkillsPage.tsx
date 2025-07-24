@@ -3,6 +3,7 @@ const skills = [
 		category: "Frontend",
 		items: [
 			{ name: "React", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", hoverColor: "hover:bg-blue-500" },
+			{ name: "JavaScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", hoverColor: "hover:bg-yellow-500" },
 			{ name: "TypeScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", hoverColor: "hover:bg-blue-600" },
 			{ name: "TailwindCSS", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg", hoverColor: "hover:bg-cyan-500" },
 		],
@@ -11,8 +12,6 @@ const skills = [
 		category: "Backend",
 		items: [
 			{ name: "Node.js", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", hoverColor: "hover:bg-green-600" },
-			{ name: "Express", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg", hoverColor: "hover:bg-gray-600" },
-			{ name: "REST APIs", img: "https://cdn.worldvectorlogo.com/logos/rest-api.svg", hoverColor: "hover:bg-purple-600" },
 			{ name: "PHP", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg", hoverColor: "hover:bg-indigo-600" },
 			{ name: "Java", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", hoverColor: "hover:bg-red-600" },
 		],
@@ -22,17 +21,16 @@ const skills = [
 		items: [
 			{ name: "PostgreSQL", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", hoverColor: "hover:bg-blue-700" },
 			{ name: "MongoDB", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", hoverColor: "hover:bg-green-700" },
-			{ name: "Redis", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg", hoverColor: "hover:bg-red-700" },
 			{ name: "MySQL", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", hoverColor: "hover:bg-blue-600" },
-			{ name: "Oracle", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg", hoverColor: "hover:bg-orange-600" },
+			{ name: "Cloud Firestore", img: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg", hoverColor: "hover:bg-amber-500" },
 		],
 	},
 	{
 		category: "Tools",
 		items: [
 			{ name: "Git", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", hoverColor: "hover:bg-orange-700" },
-			{ name: "Docker", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", hoverColor: "hover:bg-blue-800" },
 			{ name: "AWS", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg", hoverColor: "hover:bg-yellow-600" },
+			{ name: "Firebase", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg", hoverColor: "hover:bg-amber-500" },
 		],
 	},
 ]
