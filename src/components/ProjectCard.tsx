@@ -10,6 +10,7 @@ export interface Project {
   features?: string[] // Key features of the project
   challenges?: string // Challenges faced during development
   outcome?: string // Outcome or results of the project
+  weblink?: string // Optional weblink property
 }
 
 export function ProjectCard({

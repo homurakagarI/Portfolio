@@ -40,6 +40,7 @@ export default function ProjectsPage() {
       title: "Data-Driven Management System with Geo-Tagging and Cloud Analytics for KM Foundation",
       description: "This capstone project introduces an innovative Data-Driven Management System designed specifically for KM Foundation. The system integrates geo-tagging capabilities with cloud-based analytics to streamline operations and improve decision-making processes.",
       link: "https://github.com/axiomproject/kkmk",
+      weblink: "https://kmfi.netlify.app",
       thumbnail: "\KMFI image.jpg",
       screenshots: [
        "\KMFI image.jpg",
@@ -66,6 +67,7 @@ export default function ProjectsPage() {
       title: "CL Genavia Air Conditioning & Refrigeration Services Website",
       description: "A modern, responsive website for CL Genavia Air Conditioning & Refrigeration Services. Features include a prominent company logo, animated brand showcase, detailed service listings, gallery, and contact information. The design emphasizes clarity, professionalism, and ease of navigation for both desktop and mobile users.",
       link: "https://github.com/homurakagarI/clgenaviaAirconandRefrigiration",
+      weblink: "https://clgenavia.com",
       thumbnail: "\\CL1.jpg",
       screenshots: [
         "\\CL1.jpg",
@@ -88,6 +90,7 @@ export default function ProjectsPage() {
       title: "JCG Corporation Employee Management System",
       description: "A modern web-based platform built with PHP, MySQL, HTML5, CSS3, JavaScript, Bootstrap, and jQuery, designed to streamline HR operations by automating employee data management, attendance tracking, leave requests, scheduling, and approvals through a secure, role-based interface.",
       link: "https://github.com/homurakagarI/Employee-Management-Portal",
+      weblink: "https://jcgcorp.com",
       thumbnail: "\\JCG1.jpg",
       screenshots: [
         "\\JCG1.jpg",
@@ -119,6 +122,7 @@ export default function ProjectsPage() {
       title: "Raffle Mini-Games System",
       description: "An interactive raffle and mini-games platform featuring multiple game types including spinning wheels, slot machines, lottery draws, and card games. The system provides a comprehensive gaming experience with customizable game modes and participant management.",
       link: "https://github.com/homurakagarI/Raffle-System",
+      weblink: "https://raffleminigames.com",
       thumbnail: "\wow.jpg",
       screenshots: [
         "\lottery.jpg", 
@@ -301,7 +305,7 @@ export default function ProjectsPage() {
                       </div>
                     </div>
                     
-                    <div className="pt-4">
+                    <div className="pt-4 space-y-2">
                       <a
                         href={selectedProject.link}
                         target="_blank"
@@ -314,6 +318,20 @@ export default function ProjectsPage() {
                           <path d="M7 17 17 7"/>
                         </svg>
                       </a>
+                      {selectedProject.weblink && (
+                        <a
+                          href={selectedProject.weblink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+                        >
+                          <span>View Website</span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M7 7h10v10"/>
+                            <path d="M7 17 17 7"/>
+                          </svg>
+                        </a>
+                      )}
                     </div>
                   </div>
                 )}
