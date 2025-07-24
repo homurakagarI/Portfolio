@@ -56,18 +56,18 @@ export default function CertificationsPage() {
       {selectedCert && (
         <div className={`fixed inset-0 z-50 flex items-center justify-center bg-black/80 transition-all`}>
           <div className="relative w-full h-full flex flex-col items-center justify-center">
-            <div className={`bg-background rounded-lg shadow-lg w-full max-w-2xl mx-auto p-2 sm:p-8 flex flex-col items-center gap-4 sm:gap-6
+            <div className={`bg-background rounded-lg shadow-lg w-full max-w-xl mx-auto p-2 sm:p-4 flex flex-col items-center gap-2 sm:gap-4
               ${showingCertPopup ? "animate-in fade-in zoom-in-95 duration-200" : "animate-out fade-out zoom-out-95 duration-200"}
             `}>
-              <Button variant="secondary" onClick={handleCloseCert} className="self-start mb-2">
+              <Button variant="secondary" onClick={handleCloseCert} className="self-start mb-1">
                 Back
               </Button>
               <img
                 src={selectedCert.src}
                 alt={selectedCert.alt}
-                className="max-h-[60vh] sm:max-h-[80vh] max-w-[90vw] rounded-lg border bg-background object-contain"
+                className="max-h-[50vh] sm:max-h-[60vh] max-w-[85vw] rounded-lg border bg-background object-contain"
               />
-              <div className="mt-4 text-base sm:text-lg font-semibold text-background bg-foreground/80 px-4 py-2 rounded">
+              <div className="mt-2 text-sm sm:text-base font-semibold text-background bg-foreground/80 px-3 py-1.5 rounded">
                 {selectedCert.alt}
               </div>
             </div>
