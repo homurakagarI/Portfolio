@@ -20,7 +20,7 @@ export default function CertificationsPage() {
         <h2 className="text-2xl sm:text-3xl font-bold leading-tight tracking-tighter md:text-4xl">
           Certifications
         </h2>
-        <div className="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-3 w-full max-w-5xl mx-auto">
+        <div className="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-1 w-full max-w-5xl mx-auto">
           <div className="group rounded-xl border-2 border-primary/20 hover:border-primary/40 bg-card shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col overflow-hidden">
             {/* Image container with overlay */}
             <div className="relative overflow-hidden h-48">
@@ -50,68 +50,9 @@ export default function CertificationsPage() {
               </Button>
             </div>
           </div>
-
-          <div className="group rounded-xl border-2 border-primary/20 hover:border-primary/40 bg-card shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col overflow-hidden">
-            {/* Image container with overlay */}
-            <div className="relative overflow-hidden h-48">
-              <img
-                src="CertificationTest.jpg"
-                alt="TestDome Attention to Detail Certificate"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-              </div>
-            </div>
-            
-            {/* Content */}
-            <div className="p-5 flex flex-col flex-grow">
-              <h3 className="font-bold text-lg mb-2">Attention to Detail</h3>
-              <p className="text-sm text-muted-foreground mb-4 flex-grow">TestDome · July 2025 · Top 25%</p>
-              
-              <Button 
-                onClick={() => handleViewCert({
-                  src: "CertificationTest.jpg",
-                  alt: "TestDome Attention to Detail Certificate - Ranking in the Top 25%"
-                })}
-                className="mt-auto w-full transition-all duration-300 relative overflow-hidden group/btn"
-              >
-                <span className="relative z-10">View Certificate</span>
-                <span className="absolute inset-0 bg-gradient-to-r from-primary/80 to-purple-600/80 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
-              </Button>
-            </div>
-          </div>
-
-          <div className="group rounded-xl border-2 border-primary/20 hover:border-primary/40 bg-card shadow-md hover:shadow-xl transition-all duration-300 h-full flex flex-col overflow-hidden">
-            {/* Image container with overlay */}
-            <div className="relative overflow-hidden h-48">
-              <img
-                src="wow.jpg"
-                alt="IQ Test Score 98"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-              </div>
-            </div>
-            
-            {/* Content */}
-            <div className="p-5 flex flex-col flex-grow">
-              <h3 className="font-bold text-lg mb-2">IQ Test Assessment</h3>
-              <p className="text-sm text-muted-foreground mb-4 flex-grow">Score: 98 · July 2025</p>
-              
-              <Button 
-                onClick={() => handleViewCert({
-                  src: "wow.jpg",
-                  alt: "IQ Test Result - Score of 98"
-                })}
-                className="mt-auto w-full transition-all duration-300 relative overflow-hidden group/btn"
-              >
-                <span className="relative z-10">View Certificate</span>
-                <span className="absolute inset-0 bg-gradient-to-r from-primary/80 to-purple-600/80 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></span>
-              </Button>
-            </div>
-          </div>
         </div>
       </div>
+
       {selectedCert && (
         <div className={`fixed inset-0 z-50 flex items-center justify-center bg-black/80 transition-all`}>
           <div className="relative w-full h-full flex flex-col items-center justify-center">
@@ -136,3 +77,7 @@ export default function CertificationsPage() {
     </section>
   )
 }
+
+
+
+
