@@ -67,7 +67,7 @@ export default function ProjectsPage() {
       title: "CL Genavia Air Conditioning & Refrigeration Services Website",
       description: "A modern, responsive website for CL Genavia Air Conditioning & Refrigeration Services. Features include a prominent company logo, animated brand showcase, detailed service listings, gallery, and contact information. The design emphasizes clarity, professionalism, and ease of navigation for both desktop and mobile users.",
       link: "https://github.com/homurakagarI/clgenaviaAirconandRefrigiration",
-      weblink: "https://clgenaviaservices.com",
+      weblink: "https://clgenaviaservices.netlify.app/",
       thumbnail: "\\CL1.jpg",
       screenshots: [
         "\\CL1.jpg",
