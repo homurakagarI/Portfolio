@@ -195,7 +195,7 @@ export default function ProjectsPage() {
             Featured Projects
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            A showcase of my technical skills and creative problem-solving abilities
+            A showcase of my technical skills and creative Projects 
           </p>
         </div>
         
