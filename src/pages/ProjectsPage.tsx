@@ -142,6 +142,30 @@ export default function ProjectsPage() {
       ],
       challenges: "The main challenges included implementing smooth animations for different game mechanics, ensuring fair randomization algorithms, and creating an intuitive user interface that works across various game types while maintaining consistent user experience.",
       outcome: "The platform has been successfully deployed and used for multiple events, providing an engaging and fair way to conduct raffles and mini-games with positive user feedback on the interactive experience."
+    },
+    {
+      title: "Lagusan Coffee Sky Deck",
+      description: "A modern, responsive coffee shop website built with Vue.js, TypeScript, and Firebase. Features interactive menu with filtering, contact form with Firebase integration, real-time data storage, and mobile-first responsive design optimized for all devices.",
+      link: "https://github.com/homurakagarI/lagusan-coffee-sky-deck",
+      weblink: "https://lagusancoffee.netlify.app/",
+      thumbnail: "\lagusanGG.jpg",
+      screenshots: [
+        "\lagusanGG.jpg",
+        
+      ],
+      technologies: ["Vue.js 3", "TypeScript", "Firebase", "Firestore", "Vite", "CSS3", "Firebase Hosting"],
+      features: [
+        "Modern responsive design optimized for mobile and desktop",
+        "Interactive menu with filtering by category",
+        "Contact form with Firebase Firestore integration",
+        "Real-time data storage with Firebase Firestore",
+        "Firebase Analytics for user insights",
+        "Content management system",
+        "Order management system ready for implementation",
+        "Smooth scrolling navigation with hamburger menu"
+      ],
+      challenges: "Integrating Firebase services seamlessly while maintaining fast performance, implementing real-time data synchronization, ensuring optimal mobile responsiveness across all device sizes, and creating an intuitive menu filtering system that works efficiently with Firebase backend.",
+      outcome: "Successfully delivered a fully functional coffee shop website with Firebase integration, enabling real-time contact form submissions, newsletter subscriptions, and a foundation for future e-commerce features. The mobile-first approach resulted in excellent user experience across all devices."
     }
     // Add more projects as needed
   ]
