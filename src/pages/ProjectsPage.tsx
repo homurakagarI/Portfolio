@@ -91,9 +91,9 @@ export default function ProjectsPage() {
       description: "A modern web-based platform built with PHP, MySQL, HTML5, CSS3, JavaScript, Bootstrap, and jQuery, designed to streamline HR operations by automating employee data management, attendance tracking, leave requests, scheduling, and approvals through a secure, role-based interface.",
       link: "https://github.com/homurakagarI/Employee-Management-Portal",
       weblink: "https://rockwellcorp.com",
-      thumbnail: "\\JCG1.jpg",
+      thumbnail: "\\RC1.png",
       screenshots: [
-        "\\JCG1.jpg",
+        "\\RC1.png",
         "\\JCG2.jpg",
         "\\JCG3.jpg",
         "\\JCG4.jpg",
