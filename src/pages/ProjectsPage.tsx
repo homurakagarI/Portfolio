@@ -87,10 +87,10 @@ export default function ProjectsPage() {
       outcome: "The website provides a clear, professional, and user-friendly experience, helping CL Genavia reach more customers and streamline service inquiries."
     },
     {
-      title: "JCG Corporation Employee Management System",
+      title: "RockWell Corporation Employee Management System",
       description: "A modern web-based platform built with PHP, MySQL, HTML5, CSS3, JavaScript, Bootstrap, and jQuery, designed to streamline HR operations by automating employee data management, attendance tracking, leave requests, scheduling, and approvals through a secure, role-based interface.",
       link: "https://github.com/homurakagarI/Employee-Management-Portal",
-      weblink: "https://jcgcorp.com",
+      weblink: "https://rockwellcorp.com",
       thumbnail: "\\JCG1.jpg",
       screenshots: [
         "\\JCG1.jpg",
@@ -116,7 +116,7 @@ export default function ProjectsPage() {
         "Responsive and user-friendly interface"
       ],
       challenges: "Ensuring secure authentication and authorization for different user roles, integrating real-time attendance tracking, and providing a seamless user experience across devices.",
-      outcome: "The platform has streamlined HR operations, reduced manual paperwork, and improved data accuracy and accessibility for JCG Corporation."
+      outcome: "The platform has streamlined HR operations, reduced manual paperwork, and improved data accuracy and accessibility for RockWell Corporation."
     },
     {
       title: "Raffle Mini-Games System",
