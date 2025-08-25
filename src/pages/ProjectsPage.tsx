@@ -147,7 +147,7 @@ export default function ProjectsPage() {
       title: "Lagusan Coffee Sky Deck",
       description: "A modern, responsive coffee shop website built with Vue.js, TypeScript, and Firebase. Features interactive menu with filtering, contact form with Firebase integration, real-time data storage, and mobile-first responsive design optimized for all devices.",
       link: "https://github.com/homurakagarI/lagusan-coffee-sky-deck",
-      weblink: "https://lagusancoffee.netlify.app/",
+      weblink: "https://lagusan.netlify.app/",
       thumbnail: "\L1.jpg",
       screenshots: [
         "\L1.jpg",
