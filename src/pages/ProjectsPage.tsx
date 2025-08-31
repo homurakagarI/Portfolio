@@ -39,7 +39,7 @@ export default function ProjectsPage() {
     {
       title: "Data-Driven Management System with Geo-Tagging and Cloud Analytics for KM Foundation",
       description: "This capstone project introduces an innovative Data-Driven Management System designed specifically for KM Foundation. The system integrates geo-tagging capabilities with cloud-based analytics to streamline operations and improve decision-making processes.",
-      link: "https://github.com/axiomproject/kkmk",
+      link: "https://github.com/homurakagarI/kkmk-main",
       weblink: "https://kmfi.netlify.app",
       thumbnail: "\KMFI image.jpg",
       screenshots: [
