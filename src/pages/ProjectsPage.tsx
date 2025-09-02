@@ -43,6 +43,7 @@ export default function ProjectsPage() {
       weblink: "https://kmfi.netlify.app",
       thumbnail: "\KMFI image.jpg",
       screenshots: [
+       "\BestCapstone.jpg",
        "\KMFI image.jpg",
        "\kmfi 1.jpg",
        "\KMFI 2.jpg",
@@ -66,7 +67,7 @@ export default function ProjectsPage() {
     {
       title: "CL Genavia Air Conditioning & Refrigeration Services Website",
       description: "A modern, responsive website for CL Genavia Air Conditioning & Refrigeration Services. Features include a prominent company logo, animated brand showcase, detailed service listings, gallery, and contact information. The design emphasizes clarity, professionalism, and ease of navigation for both desktop and mobile users.",
-      link: "https://github.com/homurakagarI/clgenaviaAirconandRefrigiration",
+      link: "https://github.com/homurakagarI/clservices",
       weblink: "https://clservices.netlify.app/",
       thumbnail: "\\cls1.png",
       screenshots: [
@@ -90,7 +91,7 @@ export default function ProjectsPage() {
       title: "RockWell Corporation Employee Management System",
       description: "A modern web-based platform built with PHP, MySQL, HTML5, CSS3, JavaScript, Bootstrap, and jQuery, designed to streamline HR operations by automating employee data management, attendance tracking, leave requests, scheduling, and approvals through a secure, role-based interface.",
       link: "https://github.com/homurakagarI/Employee-Management-Portal",
-      weblink: "https://rockwellcorp.com",
+      weblink: "",
       thumbnail: "\\RC1.png",
       screenshots: [
         "\\RC1.png",
@@ -121,9 +122,9 @@ export default function ProjectsPage() {
     {
       title: "Raffle Mini-Games System",
       description: "An interactive raffle and mini-games platform featuring multiple game types including spinning wheels, slot machines, lottery draws, and card games. The system provides a comprehensive gaming experience with customizable game modes and participant management.",
-      link: "https://github.com/homurakagarI/Raffle-System",
-      weblink: "https://raffleminigames.com",
-      thumbnail: "\wow.jpg",
+      link: "https://github.com/homurakagarI/MiniGames",
+      weblink: "https://yaminigames.netlify.app/",
+      thumbnail: "\minigames.png",
       screenshots: [
         "\lottery.jpg", 
         "\wheel.jpg", 
