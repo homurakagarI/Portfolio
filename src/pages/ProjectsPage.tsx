@@ -178,6 +178,30 @@ export default function ProjectsPage() {
       ],
       challenges: "Integrating Firebase services seamlessly while maintaining fast performance, implementing real-time data synchronization, ensuring optimal mobile responsiveness across all device sizes, and creating an intuitive menu filtering system that works efficiently with Firebase backend.",
       outcome: "Successfully delivered a fully functional coffee shop website with Firebase integration, enabling real-time contact form submissions, newsletter subscriptions, and a foundation for future e-commerce features. The mobile-first approach resulted in excellent user experience across all devices."
+    },
+    {
+      title: "Dataflow - Data Management Platform",
+      description: "A comprehensive data management platform designed to streamline data flow processes, featuring advanced analytics, real-time data processing, and intuitive dashboard interfaces. Built with modern web technologies to provide efficient data handling capabilities.",
+      link: "https://github.com/homurakagarI/Dataflow",
+      weblink: "https://dataflow-phi.vercel.app/",
+      thumbnail: "df thumbnail.png",
+      screenshots: [
+        "df1.png",
+        "df2.png",
+        "df3.png",
+        "df4.png"
+      ],
+      technologies: ["React", "TypeScript", "Node.js", "Next.js", "Vercel"],
+      features: [
+        "Real-time data processing and analytics",
+        "Interactive dashboard with data visualization",
+        "Efficient data flow management",
+        "Modern responsive user interface",
+        "Advanced filtering and search capabilities",
+        "Cloud-based deployment and scaling"
+      ],
+      challenges: "The main challenges included implementing efficient data processing algorithms, ensuring real-time updates across multiple data streams, and creating intuitive visualizations that could handle large datasets while maintaining optimal performance.",
+      outcome: "Successfully deployed a robust data management platform that provides users with powerful tools for data analysis and visualization, resulting in improved data-driven decision making and streamlined workflows."
     }
     // Add more projects as needed
   ]
