@@ -180,7 +180,7 @@ export default function ProjectsPage() {
       outcome: "Successfully delivered a fully functional coffee shop website with Firebase integration, enabling real-time contact form submissions, newsletter subscriptions, and a foundation for future e-commerce features. The mobile-first approach resulted in excellent user experience across all devices."
     },
     {
-      title: "Dataflow - Data Management Platform",
+      title: "Dataflow",
       description: "A comprehensive data management platform designed to streamline data flow processes, featuring advanced analytics, real-time data processing, and intuitive dashboard interfaces. Built with modern web technologies to provide efficient data handling capabilities.",
       link: "https://github.com/homurakagarI/Dataflow",
       weblink: "https://dataflow-phi.vercel.app/",
@@ -202,6 +202,29 @@ export default function ProjectsPage() {
       ],
       challenges: "The main challenges included implementing efficient data processing algorithms, ensuring real-time updates across multiple data streams, and creating intuitive visualizations that could handle large datasets while maintaining optimal performance.",
       outcome: "Successfully deployed a robust data management platform that provides users with powerful tools for data analysis and visualization, resulting in improved data-driven decision making and streamlined workflows."
+    },
+    {
+      title: "TruckPro Inc.",
+      description: "A comprehensive truck and vehicle information system designed to provide detailed vehicle data, specifications, and management capabilities. Features include vehicle registration, detailed information displays, and user-friendly navigation for accessing truck-related data.",
+      link: "https://github.com/homurakagarI/TruckInfoSite",
+      weblink: "https://truckinfosite.onrender.com/",
+      thumbnail: "tf-thumbnail.png",
+      screenshots: [
+        "tf1.png",
+        "tf2.png",
+        "tf3.png"
+      ],
+      technologies: ["HTML5", "CSS3", "JavaScript", "Node.js", "Express.js"],
+      features: [
+        "Comprehensive vehicle information database",
+        "User-friendly vehicle registration system",
+        "Detailed vehicle specifications display",
+        "Responsive design for all devices",
+        "Search and filter functionality",
+        "Clean and intuitive user interface"
+      ],
+      challenges: "The main challenges included designing an efficient database structure for vehicle information, implementing robust search and filtering capabilities, and ensuring the system could handle various types of vehicle data while maintaining fast performance and user-friendly navigation.",
+      outcome: "Successfully developed and deployed a functional vehicle information system that provides users with easy access to truck and vehicle data, streamlining the process of vehicle management and information retrieval."
     }
     // Add more projects as needed
   ]
