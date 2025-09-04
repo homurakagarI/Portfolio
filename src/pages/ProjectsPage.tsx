@@ -165,7 +165,7 @@ export default function ProjectsPage() {
         "\L12.jpg",
         "\L13.jpg",
       ],
-      technologies: ["Vue.js 3", "TypeScript", "Firebase", "Firestore", "Vite", "CSS3", "Firebase Hosting"],
+      technologies: ["Next.js", "React", "Tailwind CSS", "MongoDB", "MonggoPay", "HTML5", "CSS3"],
       features: [
         "Modern responsive design optimized for mobile and desktop",
         "Interactive menu with filtering by category",
