@@ -584,8 +584,7 @@ export default function ProjectsPage() {
           
           <div className="grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {shopifyProjects.map((project, idx) => {
-              const animationDelay = (projects.length + idx) * 150;
-              const itemSection = useIntersectionObserver({ threshold: 0.1 }, animationDelay);
+              const itemSection = useIntersectionObserver({ threshold: 0.1 }, 0);
               
               return (
                 <div 
