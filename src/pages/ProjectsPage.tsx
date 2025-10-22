@@ -229,6 +229,238 @@ export default function ProjectsPage() {
     // Add more projects as needed
   ]
 
+  const shopifyProjects: Project[] = [
+    {
+      title: "Workshop Emporium",
+      description: "A sleek and modern Shopify store featuring contemporary fashion collections with advanced filtering, size guides, and seamless shopping experience. Built with custom Liquid templates and optimized for conversions.",
+      link: "https://workshopemporium.com/",
+      weblink: "",
+      thumbnail: "Shop1.png",
+      screenshots: ["Shop1.png"],
+      technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Shopify API"],
+      features: [
+        "Custom theme development",
+        "Product filtering and search",
+        "Size guide integration",
+        "Wishlist functionality",
+        "Mobile-responsive design",
+        "Fast checkout process"
+      ],
+      challenges: "Creating a unique brand identity while maintaining Shopify's best practices, implementing custom product filtering, and optimizing for mobile conversions.",
+      outcome: "Delivered a high-converting fashion store with improved user engagement and streamlined shopping experience."
+    },
+    {
+      title: "Backyard Supply Redirect",
+      description: "An elegant Shopify e-commerce platform showcasing premium accessories and lifestyle products. Features include dynamic product galleries, customer reviews, and integrated payment solutions.",
+      link: "https://backyardsupplydirect.com/",
+      weblink: "",
+      thumbnail: "Shop2.png",
+      screenshots: ["Shop2.png"],
+      technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "HTML5"],
+      features: [
+        "Dynamic product showcases",
+        "Customer review system",
+        "Multi-currency support",
+        "Newsletter integration",
+        "Social media integration",
+        "SEO-optimized pages"
+      ],
+      challenges: "Implementing a sophisticated product display system, integrating multiple payment gateways, and ensuring fast page load times with high-quality product images.",
+      outcome: "Successfully launched a premium accessories store with enhanced product visibility and improved customer satisfaction."
+    },
+    {
+      title: "Seraphel Recovery",
+      description: "A comprehensive Shopify store specializing in lifestyle and home goods with curated collections, bundle offers, and personalized recommendations. Features custom sections and interactive product displays.",
+      link: "https://seraphelrecovery.com/",
+      weblink: "",
+      thumbnail: "Shop3.png",
+      screenshots: ["Shop3.png"],
+      technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Shopify Apps"],
+      features: [
+        "Curated product collections",
+        "Bundle and upsell features",
+        "Product recommendations",
+        "Gift card integration",
+        "Customer accounts",
+        "Order tracking system"
+      ],
+      challenges: "Developing custom bundle logic, creating personalized shopping experiences, and integrating third-party apps while maintaining site performance.",
+      outcome: "Created a versatile lifestyle store with increased average order value through effective bundling and recommendation features."
+    },
+    {
+      title: "Elite Earth Designs",
+      description: "A vibrant Shopify store dedicated to beauty and cosmetics products featuring virtual try-on capabilities, ingredient lists, and beauty tips blog. Optimized for beauty enthusiasts and skincare lovers.",
+      link: "https://eliteearthdesigns.com/",
+      weblink: "",
+      thumbnail: "Shop4.png",
+      screenshots: ["Shop4.png"],
+      technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Third-party APIs"],
+      features: [
+        "Product ingredient displays",
+        "Beauty tips blog integration",
+        "Subscription box options",
+        "Loyalty program integration",
+        "Video tutorials section",
+        "Skin type recommendations"
+      ],
+      challenges: "Integrating complex product attributes, implementing subscription functionality, and creating an engaging content strategy alongside e-commerce features.",
+      outcome: "Launched a successful beauty boutique with strong community engagement and recurring revenue through subscription services."
+    },
+    {
+      title: "Green Earth Direct",
+      description: "A dynamic Shopify store for athletic wear and sportswear featuring size calculators, workout guides, and athlete endorsements. Built for performance and optimized for sports enthusiasts.",
+      link: "https://greenearthdirect.com/",
+      weblink: "",
+      thumbnail: "Shop 5.png",
+      screenshots: ["Shop 5.png"],
+      technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "HTML5"],
+      features: [
+        "Size calculator tool",
+        "Workout guide integration",
+        "Athlete testimonials",
+        "Performance fabric filters",
+        "Bulk ordering options",
+        "Team customization features"
+      ],
+      challenges: "Creating an interactive size guide system, managing complex product variants for different sports, and implementing bulk ordering with customization options.",
+      outcome: "Delivered a high-performance sportswear store with excellent user experience and strong conversion rates among fitness enthusiasts."
+    },
+    {
+      title: "PurexWellness",
+      description: "A unique Shopify marketplace featuring artisan and handcrafted products with maker stories, customization options, and sustainable packaging. Celebrates craftsmanship and authentic handmade goods.",
+      link: "https://purexwellness.com/",
+      weblink: "",
+      thumbnail: "Shop 6.png",
+      screenshots: ["Shop 6.png"],
+      technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Custom Apps"],
+      features: [
+        "Maker story profiles",
+        "Custom product options",
+        "Gift wrapping services",
+        "Sustainable packaging info",
+        "Made-to-order functionality",
+        "Artist collaboration tools"
+      ],
+      challenges: "Implementing flexible customization options, managing made-to-order inventory, and creating compelling storytelling features for artisan makers.",
+      outcome: "Successfully created a thriving artisan marketplace that connects makers with customers, fostering community and celebrating craftsmanship."
+    },
+    {
+      title: "Man Cave Focus",
+      description: "A comprehensive Shopify store for tech gadgets and electronics featuring detailed specifications, comparison tools, and tech reviews. Designed for tech enthusiasts with advanced filtering and search capabilities.",
+      link: "https://mancavefocus.com/",
+      weblink: "",
+      thumbnail: "Shop 7.png",
+      screenshots: ["Shop 7.png"],
+      technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Shopify API"],
+      features: [
+        "Technical specification displays",
+        "Product comparison tool",
+        "Tech reviews and ratings",
+        "Warranty information",
+        "Pre-order functionality",
+        "Tech support integration"
+      ],
+      challenges: "Displaying complex technical specifications in user-friendly formats, implementing product comparison features, and managing pre-orders with inventory sync.",
+      outcome: "Launched a successful tech store with robust product information architecture and enhanced customer confidence through detailed specifications and reviews."
+    },
+    {
+      title: "Regenex Peak Fitness",
+      description: "A trendy Shopify store featuring urban streetwear and contemporary fashion. Built with bold designs, interactive lookbooks, and influencer collaborations to create a vibrant shopping community.",
+      link: "https://regenexpeakfitness.com/",
+      weblink: "",
+      thumbnail: "Shop 8.png",
+      screenshots: ["Shop 8.png"],
+      technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "HTML5"],
+      features: [
+        "Interactive lookbook galleries",
+        "Influencer collaboration section",
+        "Limited edition drops",
+        "Size availability notifications",
+        "Style quiz for recommendations",
+        "Community-driven reviews"
+      ],
+      challenges: "Creating a dynamic limited edition release system, implementing real-time inventory updates for high-demand items, and building an engaging community platform within the e-commerce framework.",
+      outcome: "Established a thriving streetwear community with strong brand loyalty and successful limited edition product launches driving consistent traffic and sales."
+    },
+    {
+      title: "Performance Recovery Supply",
+      description: "An upscale Shopify boutique specializing in premium home decor and essentials. Features curated collections, interior design tips, and personalized shopping assistance for sophisticated homeowners.",
+      link: "https://performancerecoverysupply.com/",
+      weblink: "",
+      thumbnail: "Shop 9.png",
+      screenshots: ["Shop 9.png"],
+      technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Shopify Plus"],
+      features: [
+        "Curated luxury collections",
+        "Interior design consultation",
+        "Room visualization tools",
+        "Concierge shopping service",
+        "Premium packaging options",
+        "White-glove delivery integration"
+      ],
+      challenges: "Implementing a high-end user experience with white-glove service integration, creating sophisticated product visualization tools, and maintaining premium brand positioning throughout the customer journey.",
+      outcome: "Successfully launched a luxury home goods platform with exceptional customer service features and high customer satisfaction rates among upscale clientele."
+    },
+    {
+      title: "Fireside Luxe",
+      description: "A rugged Shopify store for outdoor enthusiasts featuring camping, hiking, and adventure gear. Includes gear guides, trail recommendations, and expert advice for outdoor explorers.",
+      link: "https://firesideluxe.com/",
+      weblink: "",
+      thumbnail: "Shop 10.png",
+      screenshots: ["Shop 10.png"],
+      technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Google Maps API"],
+      features: [
+        "Gear recommendation engine",
+        "Trail and destination guides",
+        "Weather-based product suggestions",
+        "Rental equipment options",
+        "Expert advice blog",
+        "Adventure community forum"
+      ],
+      challenges: "Integrating weather APIs for contextual product recommendations, building a comprehensive gear guide system, and creating a rental inventory management system alongside traditional e-commerce.",
+      outcome: "Created a comprehensive outdoor adventure platform that serves both as an e-commerce store and a community hub for outdoor enthusiasts, driving engagement and repeat purchases."
+    },
+    {
+      title: "Amore Culinary Excellence",
+      description: "A delightful Shopify store dedicated to gourmet cooking and kitchen supplies featuring chef-curated collections, cooking tips, and subscription box services for culinary enthusiasts.",
+      link: "https://amoreculinaryexcellence.com/",
+      weblink: "",
+      thumbnail: "Shop 11.png",
+      screenshots: ["Shop 11.png"],
+      technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Subscription APIs"],
+      features: [
+        "Breed-specific product filters",
+        "Pet care blog and tips",
+        "Subscription box services",
+        "Vet-approved product badges",
+        "Pet profile creation",
+        "Auto-delivery scheduling"
+      ],
+      challenges: "Developing breed-specific filtering logic, implementing flexible subscription models with customization options, and creating engaging pet care content while maintaining focus on product sales.",
+      outcome: "Built a beloved pet supply store with strong subscription revenue and an engaged community of pet owners who rely on the platform for ongoing pet care needs."
+    },
+    {
+      title: "BBQ Nest",
+      description: "An exquisite Shopify store for gourmet foods, artisan beverages, and culinary delights. Features recipe pairings, chef recommendations, and gift box customization for food connoisseurs.",
+      link: "https://bbqnest.com/",
+      weblink: "",
+      thumbnail: "Shop 12.png",
+      screenshots: ["Shop 12.png"],
+      technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Custom APIs"],
+      features: [
+        "Recipe pairing suggestions",
+        "Chef recommendation section",
+        "Custom gift box builder",
+        "Tasting notes and descriptions",
+        "Food and wine pairing guide",
+        "Subscription tasting boxes"
+      ],
+      challenges: "Creating an interactive gift box customization tool, implementing complex pairing algorithms for food and beverage suggestions, and managing perishable inventory with expiration tracking.",
+      outcome: "Launched a premium gourmet marketplace with exceptional customization features and strong gift sales, establishing a loyal customer base of food enthusiasts and gift shoppers."
+    }
+    // Add more Shopify projects as needed
+  ]
+
   const titleSection = useIntersectionObserver({ threshold: 0.1 })
   const [selectedProject, setSelectedProject] = useState<Project | null>(null)
   const [showingProjectPopup, setShowingProjectPopup] = useState(false)
@@ -286,6 +518,39 @@ export default function ProjectsPage() {
           <div className="grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
             {projects.map((project, idx) => {
               const animationDelay = idx * 150;
+              const itemSection = useIntersectionObserver({ threshold: 0.1 }, animationDelay);
+              
+              return (
+                <div 
+                  key={idx} 
+                  ref={itemSection.ref}
+                  className={`transition-all duration-1000 transform ${
+                    itemSection.isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"
+                  }`}
+                >
+                  <ProjectCard project={project} onView={handleViewProject} />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Shopify Projects Section */}
+        <div className="w-full max-w-6xl mt-16">
+          <div 
+            className="w-full text-center mb-10 transition-all duration-1000 transform"
+          >
+            <h2 className="text-2xl md:text-4xl font-bold mb-3 bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-emerald-600">
+              Shopify Projects
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              E-commerce solutions built with Shopify platform
+            </p>
+          </div>
+          
+          <div className="grid gap-6 sm:gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            {shopifyProjects.map((project, idx) => {
+              const animationDelay = (projects.length + idx) * 150;
               const itemSection = useIntersectionObserver({ threshold: 0.1 }, animationDelay);
               
               return (
@@ -395,7 +660,7 @@ export default function ProjectsPage() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
                       >
-                        <span>View on GitHub</span>
+                        <span>{selectedProject.technologies?.includes("Shopify") ? "View Website" : "View on GitHub"}</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                           <path d="M7 7h10v10"/>
                           <path d="M7 17 17 7"/>
