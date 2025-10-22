@@ -232,231 +232,265 @@ export default function ProjectsPage() {
   const shopifyProjects: Project[] = [
     {
       title: "Workshop Emporium",
-      description: "A sleek and modern Shopify store featuring contemporary fashion collections with advanced filtering, size guides, and seamless shopping experience. Built with custom Liquid templates and optimized for conversions.",
+      description: "A professional Shopify store specializing in industrial workshop equipment including lathe machines, milling machines, and comprehensive tool storage solutions. Built for manufacturers, machinists, and workshop professionals seeking quality precision equipment.",
       link: "https://workshopemporium.com/",
       weblink: "",
       thumbnail: "Shop1.png",
       screenshots: ["Shop1.png"],
       technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Shopify API"],
       features: [
-        "Custom theme development",
-        "Product filtering and search",
-        "Size guide integration",
-        "Wishlist functionality",
-        "Mobile-responsive design",
-        "Fast checkout process"
+        "Detailed machine specifications and technical data",
+        "Tool storage configuration builder",
+        "Industrial equipment catalog with filtering",
+        "Technical support and consultation",
+        "Bulk ordering for workshops",
+        "Shipping quotes for heavy machinery",
+        "Installation service integration",
+        "Warranty and maintenance information"
       ],
-      challenges: "Creating a unique brand identity while maintaining Shopify's best practices, implementing custom product filtering, and optimizing for mobile conversions.",
-      outcome: "Delivered a high-converting fashion store with improved user engagement and streamlined shopping experience."
+      challenges: "Creating detailed technical specification displays for complex machinery, implementing freight shipping calculators for heavy equipment, and building a tool storage configuration system that helps customers design their workshop layout.",
+      outcome: "Delivered a comprehensive industrial equipment store that serves professional machinists and workshop owners with detailed product information and specialized purchasing tools for heavy machinery."
     },
     {
-      title: "Backyard Supply Redirect",
-      description: "An elegant Shopify e-commerce platform showcasing premium accessories and lifestyle products. Features include dynamic product galleries, customer reviews, and integrated payment solutions.",
+      title: "Backyard Supply Direct",
+      description: "Backyard Supply Direct began with a simple belief that life's best moments happen outdoors. What started as a passion for creating beautiful, functional spaces has grown into a commitment to helping homeowners transform their backyards into places of comfort, connection, and pride. We're here to make outdoor living effortless and inspiring for everyone.",
       link: "https://backyardsupplydirect.com/",
       weblink: "",
       thumbnail: "Shop2.png",
       screenshots: ["Shop2.png"],
       technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "HTML5"],
       features: [
-        "Dynamic product showcases",
-        "Customer review system",
-        "Multi-currency support",
-        "Newsletter integration",
-        "Social media integration",
-        "SEO-optimized pages"
+        "Outdoor furniture and decor collections",
+        "Backyard design inspiration gallery",
+        "Product visualization tools",
+        "Seasonal outdoor living guides",
+        "Customer project showcases",
+        "Expert outdoor living advice",
+        "Weather-resistant product filters",
+        "Bundle deals for complete setups"
       ],
-      challenges: "Implementing a sophisticated product display system, integrating multiple payment gateways, and ensuring fast page load times with high-quality product images.",
-      outcome: "Successfully launched a premium accessories store with enhanced product visibility and improved customer satisfaction."
+      challenges: "Creating an inspiring shopping experience that helps customers envision their outdoor spaces, implementing effective product visualization tools, and curating collections that balance aesthetics with functionality for outdoor environments.",
+      outcome: "Successfully launched an outdoor living e-commerce platform that inspires homeowners to create beautiful backyard spaces, with strong customer engagement through project showcases and design inspiration."
     },
     {
       title: "Seraphel Recovery",
-      description: "A comprehensive Shopify store specializing in lifestyle and home goods with curated collections, bundle offers, and personalized recommendations. Features custom sections and interactive product displays.",
+      description: "We are more than a store, we are partners in your wellness journey. With a deep commitment to quality, safety, and innovation, we ensure that each solution we provide meets the highest standards. Whether it's red light therapy, hyperbaric chambers, or cold plunge systems, we stand behind products that deliver real, measurable results.",
       link: "https://seraphelrecovery.com/",
       weblink: "",
       thumbnail: "Shop3.png",
       screenshots: ["Shop3.png"],
       technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Shopify Apps"],
       features: [
-        "Curated product collections",
-        "Bundle and upsell features",
-        "Product recommendations",
-        "Gift card integration",
-        "Customer accounts",
-        "Order tracking system"
+        "Red light therapy product catalog",
+        "Hyperbaric chamber specifications",
+        "Cold plunge system configurations",
+        "Wellness education and resources",
+        "Product comparison tools",
+        "Expert consultation booking",
+        "Customer success stories",
+        "Financing options for equipment",
+        "Installation and setup support"
       ],
-      challenges: "Developing custom bundle logic, creating personalized shopping experiences, and integrating third-party apps while maintaining site performance.",
-      outcome: "Created a versatile lifestyle store with increased average order value through effective bundling and recommendation features."
+      challenges: "Presenting complex medical-grade wellness equipment in an accessible way, implementing consultation booking systems, ensuring compliance with health and safety regulations, and educating customers on the science-backed benefits of recovery technologies.",
+      outcome: "Created a trusted wellness recovery platform that successfully bridges the gap between advanced recovery technology and everyday wellness seekers, establishing credibility through education and quality assurance."
     },
     {
       title: "Elite Earth Designs",
-      description: "A vibrant Shopify store dedicated to beauty and cosmetics products featuring virtual try-on capabilities, ingredient lists, and beauty tips blog. Optimized for beauty enthusiasts and skincare lovers.",
+      description: "Elite Earth Designs was founded with a simple vision: to transform outdoor spaces into sanctuaries of beauty, comfort, and inspiration. We believe that your surroundings shape the way you live, and that every garden, patio, or poolside deserves to be more than functional—it should be extraordinary. Guided by this philosophy, we curate collections that blend timeless design with modern innovation, bringing elegance and ease to your everyday life.",
       link: "https://eliteearthdesigns.com/",
       weblink: "",
       thumbnail: "Shop4.png",
       screenshots: ["Shop4.png"],
       technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Third-party APIs"],
       features: [
-        "Product ingredient displays",
-        "Beauty tips blog integration",
-        "Subscription box options",
-        "Loyalty program integration",
-        "Video tutorials section",
-        "Skin type recommendations"
+        "Curated outdoor furniture collections",
+        "Garden and patio design inspiration",
+        "Poolside luxury products",
+        "Interactive space planning tools",
+        "Design consultation services",
+        "Seasonal collection showcases",
+        "Material and finish customization",
+        "Virtual outdoor space visualization",
+        "Expert design tips and guides"
       ],
-      challenges: "Integrating complex product attributes, implementing subscription functionality, and creating an engaging content strategy alongside e-commerce features.",
-      outcome: "Launched a successful beauty boutique with strong community engagement and recurring revenue through subscription services."
+      challenges: "Creating an elevated shopping experience that reflects the luxury positioning of outdoor sanctuary products, implementing sophisticated space visualization tools, and curating collections that balance timeless aesthetics with modern functionality.",
+      outcome: "Launched a premium outdoor design e-commerce platform that successfully positions outdoor spaces as extraordinary sanctuaries, attracting discerning customers seeking elegant and innovative outdoor living solutions."
     },
     {
       title: "Green Earth Direct",
-      description: "A dynamic Shopify store for athletic wear and sportswear featuring size calculators, workout guides, and athlete endorsements. Built for performance and optimized for sports enthusiasts.",
+      description: "Green Earth Direct exists to help you take control of your energy, food, and future—all from your own backyard. We serve those who value resilience, freedom, and the simple joy of creating something lasting. Together, we're building more than homes; we're nurturing a movement toward conscious, sustainable living for generations to come.",
       link: "https://greenearthdirect.com/",
       weblink: "",
       thumbnail: "Shop 5.png",
       screenshots: ["Shop 5.png"],
       technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "HTML5"],
       features: [
-        "Size calculator tool",
-        "Workout guide integration",
-        "Athlete testimonials",
-        "Performance fabric filters",
-        "Bulk ordering options",
-        "Team customization features"
+        "Solar energy solutions and equipment",
+        "Home gardening and food production systems",
+        "Sustainable living product catalog",
+        "Off-grid and energy independence tools",
+        "Educational resources and guides",
+        "Community forum and knowledge sharing",
+        "DIY project tutorials",
+        "Carbon footprint calculator",
+        "Sustainability consultation services"
       ],
-      challenges: "Creating an interactive size guide system, managing complex product variants for different sports, and implementing bulk ordering with customization options.",
-      outcome: "Delivered a high-performance sportswear store with excellent user experience and strong conversion rates among fitness enthusiasts."
+      challenges: "Creating an educational platform that empowers customers toward self-sufficiency while maintaining an effective e-commerce experience, building community engagement features, and presenting complex sustainable systems in an accessible way.",
+      outcome: "Launched a transformative sustainable living platform that goes beyond commerce to build a community movement, helping customers achieve energy independence and food security while fostering conscious living practices."
     },
     {
       title: "PurexWellness",
-      description: "A unique Shopify marketplace featuring artisan and handcrafted products with maker stories, customization options, and sustainable packaging. Celebrates craftsmanship and authentic handmade goods.",
+      description: "PureXwellness was founded with a simple vision: to bring balance, strength, and renewal into everyday life. We believe that wellness is more than a routine—it's a way of living with intention, purpose, and care. From athletes to hospitality spaces, our journey is built on helping people and businesses thrive through trusted wellness solutions.",
       link: "https://purexwellness.com/",
       weblink: "",
       thumbnail: "Shop 6.png",
       screenshots: ["Shop 6.png"],
       technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Custom Apps"],
       features: [
-        "Maker story profiles",
-        "Custom product options",
-        "Gift wrapping services",
-        "Sustainable packaging info",
-        "Made-to-order functionality",
-        "Artist collaboration tools"
+        "Athletic wellness equipment catalog",
+        "Hospitality wellness solutions",
+        "Commercial and residential products",
+        "Wellness program consultation",
+        "Business partnership opportunities",
+        "Product customization for facilities",
+        "Bulk ordering for commercial clients",
+        "Wellness education and resources",
+        "Installation and training services"
       ],
-      challenges: "Implementing flexible customization options, managing made-to-order inventory, and creating compelling storytelling features for artisan makers.",
-      outcome: "Successfully created a thriving artisan marketplace that connects makers with customers, fostering community and celebrating craftsmanship."
+      challenges: "Serving both individual athletes and commercial hospitality clients with different needs, creating dual purchasing paths for B2C and B2B customers, and building trust through education while maintaining a seamless shopping experience for diverse customer segments.",
+      outcome: "Successfully launched a comprehensive wellness platform that bridges personal and commercial wellness needs, establishing partnerships with hospitality businesses while serving individual wellness enthusiasts with trusted solutions."
     },
     {
       title: "Man Cave Focus",
-      description: "A comprehensive Shopify store for tech gadgets and electronics featuring detailed specifications, comparison tools, and tech reviews. Designed for tech enthusiasts with advanced filtering and search capabilities.",
+      description: "Man Cave Focus was born from a simple belief: every man deserves a space that reflects his strength, style, and story. We're not just curators of premium leisure—we're builders of personal sanctuaries. From the first foosball table to the final humidor drawer, every piece we offer is chosen with purpose and pride.",
       link: "https://mancavefocus.com/",
       weblink: "",
       thumbnail: "Shop 7.png",
       screenshots: ["Shop 7.png"],
       technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Shopify API"],
       features: [
-        "Technical specification displays",
-        "Product comparison tool",
-        "Tech reviews and ratings",
-        "Warranty information",
-        "Pre-order functionality",
-        "Tech support integration"
+        "Premium game room furniture",
+        "Foosball and billiards tables",
+        "Cigar humidors and accessories",
+        "Bar and entertainment systems",
+        "Man cave design inspiration",
+        "Room layout planning tools",
+        "Custom furniture configurations",
+        "Style guide and curation",
+        "Complete man cave packages"
       ],
-      challenges: "Displaying complex technical specifications in user-friendly formats, implementing product comparison features, and managing pre-orders with inventory sync.",
-      outcome: "Launched a successful tech store with robust product information architecture and enhanced customer confidence through detailed specifications and reviews."
+      challenges: "Creating a premium shopping experience that helps men visualize and build their ideal personal sanctuary, implementing room planning tools for large furniture pieces, and curating collections that balance functionality with masculine aesthetics and personal expression.",
+      outcome: "Launched a premium man cave e-commerce platform that successfully positions leisure products as essential components of personal sanctuaries, helping men create spaces that reflect their unique strength, style, and story."
     },
     {
       title: "Regenex Peak Fitness",
-      description: "A trendy Shopify store featuring urban streetwear and contemporary fashion. Built with bold designs, interactive lookbooks, and influencer collaborations to create a vibrant shopping community.",
+      description: "We are more than a store, we are a destination for performance, recovery, and wellness. Our mission is to provide athletes, fitness enthusiasts, and health seekers with expertly curated tools that help them train harder, recover smarter, and live stronger. Every product in our collection is carefully selected to meet the highest standards of quality, innovation, and effectiveness.",
       link: "https://regenexpeakfitness.com/",
       weblink: "",
       thumbnail: "Shop 8.png",
       screenshots: ["Shop 8.png"],
       technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "HTML5"],
       features: [
-        "Interactive lookbook galleries",
-        "Influencer collaboration section",
-        "Limited edition drops",
-        "Size availability notifications",
-        "Style quiz for recommendations",
-        "Community-driven reviews"
+        "Performance training equipment",
+        "Recovery and wellness tools",
+        "Athlete-grade fitness gear",
+        "Expert product curation",
+        "Training guides and resources",
+        "Recovery protocol recommendations",
+        "Product effectiveness ratings",
+        "Athlete testimonials and reviews",
+        "Personalized fitness consultations"
       ],
-      challenges: "Creating a dynamic limited edition release system, implementing real-time inventory updates for high-demand items, and building an engaging community platform within the e-commerce framework.",
-      outcome: "Established a thriving streetwear community with strong brand loyalty and successful limited edition product launches driving consistent traffic and sales."
+      challenges: "Curating a diverse product catalog that serves both elite athletes and fitness beginners, establishing credibility through expert selection and validation, and creating educational content that empowers customers to make informed decisions about their training and recovery.",
+      outcome: "Established a trusted fitness and wellness destination that bridges the gap between professional-grade equipment and everyday fitness enthusiasts, building a community of customers who train harder, recover smarter, and live stronger."
     },
     {
       title: "Performance Recovery Supply",
-      description: "An upscale Shopify boutique specializing in premium home decor and essentials. Features curated collections, interior design tips, and personalized shopping assistance for sophisticated homeowners.",
+      description: "Born and raised in the rugged landscapes of Northern British Columbia, Ruth Saunders has always been driven by strength, discipline, and the pursuit of excellence. As a professional IFBB Physique athlete, martial artist, and lifelong fitness enthusiast, she has spent decades mastering both performance and recovery—understanding that true strength comes not just from how hard you train, but how well you restore. This collection was created from experience—the same methods, tools, and technologies she has relied on to perform at an elite level and maintain balance in a demanding lifestyle. Each product is carefully selected for its proven effectiveness, design integrity, and ability to enhance physical, mental, and emotional recovery. Ruth believes recovery is the foundation of longevity—the difference between burning out and becoming unstoppable. This brand exists to bring you world-class recovery and wellness solutions that merge science, performance, and luxury—so you can perform better, recover deeper, and live stronger every day.",
       link: "https://performancerecoverysupply.com/",
       weblink: "",
       thumbnail: "Shop 9.png",
       screenshots: ["Shop 9.png"],
       technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Shopify Plus"],
       features: [
-        "Curated luxury collections",
-        "Interior design consultation",
-        "Room visualization tools",
-        "Concierge shopping service",
-        "Premium packaging options",
-        "White-glove delivery integration"
+        "Elite recovery equipment collection",
+        "Performance restoration tools",
+        "Science-backed wellness products",
+        "Professional athlete-tested gear",
+        "Recovery protocol guidance",
+        "Mental and emotional wellness support",
+        "Luxury recovery experiences",
+        "Personalized recovery consultations",
+        "Longevity and sustainability focus"
       ],
-      challenges: "Implementing a high-end user experience with white-glove service integration, creating sophisticated product visualization tools, and maintaining premium brand positioning throughout the customer journey.",
-      outcome: "Successfully launched a luxury home goods platform with exceptional customer service features and high customer satisfaction rates among upscale clientele."
+      challenges: "Translating elite athlete expertise into accessible recovery solutions for all levels, maintaining the balance between scientific credibility and luxury positioning, and creating a brand story that authentically connects Ruth's personal journey with customer needs.",
+      outcome: "Successfully launched a premium recovery brand built on authentic athletic excellence, merging science, performance, and luxury to help customers perform better, recover deeper, and live stronger—establishing recovery as the foundation of longevity."
     },
     {
       title: "Fireside Luxe",
-      description: "A rugged Shopify store for outdoor enthusiasts featuring camping, hiking, and adventure gear. Includes gear guides, trail recommendations, and expert advice for outdoor explorers.",
+      description: "Fire Side Luxe was born from a simple idea that warmth should be both felt and seen. We set out to create more than just outdoor pieces; we wanted to design experiences that bring people closer. Every flame, every evening, every gathering begins with craftsmanship, care, and a passion for refined living.",
       link: "https://firesideluxe.com/",
       weblink: "",
       thumbnail: "Shop 10.png",
       screenshots: ["Shop 10.png"],
       technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Google Maps API"],
       features: [
-        "Gear recommendation engine",
-        "Trail and destination guides",
-        "Weather-based product suggestions",
-        "Rental equipment options",
-        "Expert advice blog",
-        "Adventure community forum"
+        "Luxury fire pits and outdoor fireplaces",
+        "Premium outdoor heating solutions",
+        "Gathering space design inspiration",
+        "Custom fire feature configurations",
+        "Outdoor furniture collections",
+        "Evening ambiance lighting",
+        "Installation and setup services",
+        "Safety and maintenance guides",
+        "Complete outdoor living packages"
       ],
-      challenges: "Integrating weather APIs for contextual product recommendations, building a comprehensive gear guide system, and creating a rental inventory management system alongside traditional e-commerce.",
-      outcome: "Created a comprehensive outdoor adventure platform that serves both as an e-commerce store and a community hub for outdoor enthusiasts, driving engagement and repeat purchases."
+      challenges: "Creating an emotional connection between products and the experiences they enable, showcasing warmth and ambiance through digital commerce, implementing custom fire feature configuration tools, and balancing luxury aesthetics with safety and practical considerations.",
+      outcome: "Successfully launched a premium outdoor living brand that transforms functional heating products into experiential gathering solutions, helping customers create warm, inviting spaces that bring people closer together through craftsmanship and refined living."
     },
     {
       title: "Amore Culinary Excellence",
-      description: "A delightful Shopify store dedicated to gourmet cooking and kitchen supplies featuring chef-curated collections, cooking tips, and subscription box services for culinary enthusiasts.",
+      description: "At Amore Culinary Excellence, we believe cooking is more than a daily task; it is a celebration of passion, artistry, and togetherness. Inspired by Italy's rich culinary heritage, we bring the beauty of craftsmanship and the confidence of professional kitchens into every space we serve. Our journey begins with love for food and ends with the joy it creates around the table.",
       link: "https://amoreculinaryexcellence.com/",
       weblink: "",
       thumbnail: "Shop 11.png",
       screenshots: ["Shop 11.png"],
       technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Subscription APIs"],
       features: [
-        "Breed-specific product filters",
-        "Pet care blog and tips",
-        "Subscription box services",
-        "Vet-approved product badges",
-        "Pet profile creation",
-        "Auto-delivery scheduling"
+        "Italian-inspired culinary tools",
+        "Professional-grade kitchen equipment",
+        "Chef-curated product collections",
+        "Cooking techniques and tutorials",
+        "Recipe collections and inspiration",
+        "Kitchen design consultation",
+        "Artisan cookware and cutlery",
+        "Culinary gift sets",
+        "Cooking class partnerships"
       ],
-      challenges: "Developing breed-specific filtering logic, implementing flexible subscription models with customization options, and creating engaging pet care content while maintaining focus on product sales.",
-      outcome: "Built a beloved pet supply store with strong subscription revenue and an engaged community of pet owners who rely on the platform for ongoing pet care needs."
+      challenges: "Translating the passion and artistry of Italian culinary heritage into a digital shopping experience, balancing professional-grade quality with home kitchen accessibility, and creating content that inspires both novice cooks and culinary experts to celebrate cooking as an art form.",
+      outcome: "Successfully launched a culinary excellence platform that transforms cooking from a daily task into a celebration of passion and artistry, bringing the beauty of Italian craftsmanship and professional kitchen confidence to every customer's table."
     },
     {
       title: "BBQ Nest",
-      description: "An exquisite Shopify store for gourmet foods, artisan beverages, and culinary delights. Features recipe pairings, chef recommendations, and gift box customization for food connoisseurs.",
+      description: "BBQNEST began with a simple idea to bring people together through the beauty of outdoor living. What started as a passion for great food and warm gatherings has grown into a curated destination for those who believe their backyard should feel like a retreat. Every piece we offer is chosen with care, designed to turn your outdoor space into a haven of comfort, style, and connection.",
       link: "https://bbqnest.com/",
       weblink: "",
       thumbnail: "Shop 12.png",
       screenshots: ["Shop 12.png"],
       technologies: ["Shopify", "Liquid", "JavaScript", "CSS3", "Custom APIs"],
       features: [
-        "Recipe pairing suggestions",
-        "Chef recommendation section",
-        "Custom gift box builder",
-        "Tasting notes and descriptions",
-        "Food and wine pairing guide",
-        "Subscription tasting boxes"
+        "Premium BBQ grills and smokers",
+        "Outdoor kitchen equipment",
+        "Patio furniture and seating",
+        "Outdoor entertaining essentials",
+        "Backyard retreat design ideas",
+        "Grilling guides and recipes",
+        "Complete outdoor living packages",
+        "Seasonal outdoor collections",
+        "Space planning and consultation"
       ],
-      challenges: "Creating an interactive gift box customization tool, implementing complex pairing algorithms for food and beverage suggestions, and managing perishable inventory with expiration tracking.",
-      outcome: "Launched a premium gourmet marketplace with exceptional customization features and strong gift sales, establishing a loyal customer base of food enthusiasts and gift shoppers."
+      challenges: "Creating a shopping experience that inspires outdoor living transformations, balancing functional BBQ equipment with lifestyle aesthetics, implementing outdoor space planning tools, and curating products that create backyard retreats focused on comfort, style, and connection.",
+      outcome: "Successfully launched an outdoor living destination that transforms backyards into retreat-worthy spaces, bringing together BBQ enthusiasts and outdoor living lovers through carefully curated products that facilitate great food, warm gatherings, and meaningful connections."
     }
     // Add more Shopify projects as needed
   ]
